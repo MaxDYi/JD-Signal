@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [JD-Singal.PrjPcb]
+   Generated File[JD-Signal-V1.2-RoundHoles.TXT]
+   Generated File[JD-Signal-V1.2-SlotHoles.TXT]
+   Generated File[JD-Signal-V1.2.LDP]
+   Generated File[JD-Signal-V1.2.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 13:00:21 On 2023/2/3

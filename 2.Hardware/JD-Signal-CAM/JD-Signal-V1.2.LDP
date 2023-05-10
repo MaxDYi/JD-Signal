@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=jd-signal-v1.2-roundholes.txt|DrillLayers=gtl,gp1,gp2,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=jd-signal-v1.2-slotholes.txt|DrillLayers=gtl,gp1,gp2,gbl
