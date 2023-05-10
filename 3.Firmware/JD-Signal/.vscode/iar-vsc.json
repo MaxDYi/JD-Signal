@@ -1,0 +1,5 @@
+{
+    "ewp": "${workspaceFolder}\\EWARM\\JD-Signal.ewp",
+    "configuration": "JD-Signal",
+    "toolchain": "C:\\\\Program Files\\\\IAR Systems\\\\Embedded Workbench 9.1"
+}

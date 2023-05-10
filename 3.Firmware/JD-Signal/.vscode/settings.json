@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "adc.h": "c",
+        "dac.h": "c",
+        "init.h": "c",
+        "bodesetting.h": "c",
+        "userinteraction.h": "c",
+        "sd.h": "c"
+    },
+    "C_Cpp.default.configurationProvider": "iarsystems.iar-build"
+}
