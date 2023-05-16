@@ -43,6 +43,12 @@ D:\JD-Signal\3.Firmware\JD-Signal\EWARM/../FATFS/App
 -I
 D:\JD-Signal\3.Firmware\JD-Signal\EWARM/../Middlewares/Third_Party/FatFs/src
 -I
+D:\JD-Signal\3.Firmware\JD-Signal\EWARM/../Middlewares/Third_Party/FreeRTOS/Source/include
+-I
+D:\JD-Signal\3.Firmware\JD-Signal\EWARM/../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2
+-I
+D:\JD-Signal\3.Firmware\JD-Signal\EWARM/../Middlewares/Third_Party/FreeRTOS/Source/portable/IAR/ARM_CM4F
+-I
 C:\Program Files\IAR Systems\Embedded Workbench 9.1\arm\inc\c\aarch32
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.1\arm\inc
@@ -80,6 +86,12 @@ D:\JD-Signal\3.Firmware\JD-Signal\FATFS\Target
 D:\JD-Signal\3.Firmware\JD-Signal\FATFS\App
 -I
 D:\JD-Signal\3.Firmware\JD-Signal\Middlewares\Third_Party\FatFs\src
+-I
+D:\JD-Signal\3.Firmware\JD-Signal\Middlewares\Third_Party\FreeRTOS\Source\include
+-I
+D:\JD-Signal\3.Firmware\JD-Signal\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2
+-I
+D:\JD-Signal\3.Firmware\JD-Signal\Middlewares\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

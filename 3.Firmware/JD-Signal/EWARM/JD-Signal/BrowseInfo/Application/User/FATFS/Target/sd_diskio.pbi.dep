@@ -64,8 +64,20 @@ D:\JD-Signal\3.Firmware\JD-Signal\EWARM\JD-Signal\BrowseInfo\Application\User\FA
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h \
   D:\JD-Signal\3.Firmware\JD-Signal\FATFS\Target\bsp_driver_sd.h \
   D:\JD-Signal\3.Firmware\JD-Signal\FATFS\Target\fatfs_platform.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\stdlib.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\DLib_Product_stdlib.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Core\Inc\FreeRTOSConfig.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\portable\IAR\ARM_CM4F\portmacro.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\aarch32\intrinsics.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\aarch32\iar_intrinsics_common.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h \
   D:\JD-Signal\3.Firmware\JD-Signal\FATFS\Target\sd_diskio.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\string.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\DLib_Product_string.h
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\DLib_Product_string.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\stdio.h

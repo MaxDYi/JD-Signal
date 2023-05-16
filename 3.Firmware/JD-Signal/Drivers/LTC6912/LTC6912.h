@@ -3,7 +3,7 @@
  * @Author: MaxDYi
  * @Date: 2023-01-10 18:42:43
  * @LastEditors: MaxDYi 157596643@qq.com
- * @LastEditTime: 2023-05-10 13:38:31
+ * @LastEditTime: 2023-05-16 12:15:58
  * @FilePath: \JD-Signal\Drivers\LTC6912\LTC6912.h
  */
 
@@ -13,7 +13,6 @@
 #include "main.h"
 #include "spi.h"
 #include "stdio.h"
-#include "malloc.h"
 
 #define LTC6912_TYPE1 1
 #define LTC6912_TYPE2 2
