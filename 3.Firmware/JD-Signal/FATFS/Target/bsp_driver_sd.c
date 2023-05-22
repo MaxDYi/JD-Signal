@@ -23,7 +23,7 @@
 /* USER CODE END Header */
 
 /* USER CODE BEGIN FirstSection */
-  /* can be used to modify / undefine following code or add new definitions */
+/* can be used to modify / undefine following code or add new definitions */
 /* USER CODE END FirstSection */
 /* Includes ------------------------------------------------------------------*/
 #include "bsp_driver_sd.h"
@@ -72,9 +72,9 @@ __weak uint8_t BSP_SD_Init(void)
   */
 __weak uint8_t BSP_SD_ITConfig(void)
 {
-    /* Code to be updated by the user or replaced by one from the FW pack (in a stmxxxx_sd.c file) */
+  /* Code to be updated by the user or replaced by one from the FW pack (in a stmxxxx_sd.c file) */
 
-    return (uint8_t)0;
+  return (uint8_t)0;
 }
 
 /* USER CODE END InterruptMode */

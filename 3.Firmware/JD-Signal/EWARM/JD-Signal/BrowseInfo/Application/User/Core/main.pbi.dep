@@ -57,7 +57,7 @@ D:\JD-Signal\3.Firmware\JD-Signal\EWARM\JD-Signal\BrowseInfo\Application\User\Co
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h \
-  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Core\Inc\FreeRTOSConfig.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h \
@@ -69,7 +69,13 @@ D:\JD-Signal\3.Firmware\JD-Signal\EWARM\JD-Signal\BrowseInfo\Application\User\Co
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h \
-  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\semphr.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\event_groups.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Core\Inc\adc.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Core\Inc\main.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Core\Inc\dac.h \

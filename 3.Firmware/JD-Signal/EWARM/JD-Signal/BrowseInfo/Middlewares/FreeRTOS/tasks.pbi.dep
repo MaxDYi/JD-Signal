@@ -26,4 +26,5 @@ D:\JD-Signal\3.Firmware\JD-Signal\EWARM\JD-Signal\BrowseInfo\Middlewares\FreeRTO
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h \
-  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\stack_macros.h
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\stack_macros.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\stdio.h

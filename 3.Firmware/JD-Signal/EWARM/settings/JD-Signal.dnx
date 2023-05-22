@@ -16,20 +16,20 @@
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </StLinkDriver>
     <Jet>
-        <OnlineReset>Software</OnlineReset>
-        <JetConnSerialNo>CMSIS-DAP-v1-MuseLab:070000814a46bb9f1431313030313736a5a5a5a597969908</JetConnSerialNo>
+        <JetConnSerialNo>CMSIS-DAP-v1-MuseLab:070000814a46f8851431313030313736a5a5a5a597969908</JetConnSerialNo>
         <JetConnFoundProbes />
         <PrevWtdReset>Hardware</PrevWtdReset>
         <DisableInterrupts>0</DisableInterrupts>
         <LeaveRunning>0</LeaveRunning>
         <MultiCoreRunAll>0</MultiCoreRunAll>
+        <OnlineReset>Software</OnlineReset>
     </Jet>
     <PlDriver>
         <FirstRun>0</FirstRun>
         <MemConfigValue>C:\Program Files\IAR Systems\Embedded Workbench 9.1\arm\CONFIG\debugger\ST\STM32H750VB.ddf</MemConfigValue>
     </PlDriver>
     <DebugChecksum>
-        <Checksum>2562433378</Checksum>
+        <Checksum>3249703304</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
