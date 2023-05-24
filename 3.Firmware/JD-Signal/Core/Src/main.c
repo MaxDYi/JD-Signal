@@ -55,19 +55,6 @@ void MX_FREERTOS_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint8_t Uart_Buffer[255];
-
-// 空闲中断回调函数，参数Size为串口实际接收到数据字节数
-void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
-{
-    if (huart->Instance == UART8)
-    {
-        // 把收到的一包数据通过串口回传
-        HAL_UART_Transmit(&huart8, Uart_Buffer, Size, 0xff);
-        // 再次开启空闲中断接收，不然只会接收一次数据
-        HAL_UARTEx_ReceiveToIdle_IT(&huart8, Uart_Buffer, 255);
-    }
-}
 
 /* USER CODE END 0 */
 
@@ -133,11 +120,10 @@ int main(void)
     LCD_ShowString(30, 30, "JD-Signal", WHITE, BLACK, 24, 0);
 
     // ADC_Calibration();
-    // AcquireData();
+    //  AcquireData();
     LTC6912_SetGain(2, 1);
     LTC6912_SetGain(2, 2);
 
-    HAL_UARTEx_ReceiveToIdle_IT(&huart8, Uart_Buffer, 255);
     /* USER CODE END 2 */
 
     /* Call init function for freertos objects (in freertos.c) */

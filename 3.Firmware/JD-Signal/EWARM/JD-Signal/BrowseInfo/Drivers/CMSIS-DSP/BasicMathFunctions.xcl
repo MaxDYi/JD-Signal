@@ -27,6 +27,8 @@ D:\JD-Signal\3.Firmware\JD-Signal\EWARM/../Drivers/Algorithm
 -I
 D:\JD-Signal\3.Firmware\JD-Signal\EWARM/../Drivers/BodeSetting
 -I
+D:\JD-Signal\3.Firmware\JD-Signal\EWARM/../Drivers/cJSON
+-I
 D:\JD-Signal\3.Firmware\JD-Signal\EWARM/../Drivers/IPort3
 -I
 D:\JD-Signal\3.Firmware\JD-Signal\EWARM/../Drivers/LCD
@@ -70,6 +72,8 @@ D:\JD-Signal\3.Firmware\JD-Signal\Drivers\CMSIS-DSP\Include
 D:\JD-Signal\3.Firmware\JD-Signal\Drivers\Algorithm
 -I
 D:\JD-Signal\3.Firmware\JD-Signal\Drivers\BodeSetting
+-I
+D:\JD-Signal\3.Firmware\JD-Signal\Drivers\cJSON
 -I
 D:\JD-Signal\3.Firmware\JD-Signal\Drivers\IPort3
 -I

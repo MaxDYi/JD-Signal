@@ -26,15 +26,22 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "stdio.h"
+#include "string.h"
 #include "math.h"
 #include "main.h"
 #include "LCD.h"
 #include "stdlib.h"
 #include "rtc.h"
+#include "usart.h"
+#include "cJSON.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+#define UART_BUFFER_LENGTH 255
+
+#pragma location = ".RAM_D1"
+uint8_t Uart_Buffer[UART_BUFFER_LENGTH];
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -59,7 +66,17 @@ osMessageQId UART_QueueHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
-
+uint8_t Uart_Buffer[255];
+void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
+{
+    if (huart->Instance == UART8)
+    {
+        // HAL_UART_Transmit(&huart8, Uart_Buffer, Size, 0xff);
+        // 队列上锁
+        xTaskNotifyFromISR(cJSON_TaskHandle, (uint32_t)Size, eSetValueWithoutOverwrite, NULL);
+        HAL_UARTEx_ReceiveToIdle_IT(&huart8, Uart_Buffer, UART_BUFFER_LENGTH);
+    }
+}
 /* USER CODE END FunctionPrototypes */
 
 void Default_Task(void const *argument);
@@ -109,7 +126,7 @@ void vApplicationGetIdleTaskMemory(StaticTask_t **ppxIdleTaskTCBBuffer, StackTyp
 void MX_FREERTOS_Init(void)
 {
     /* USER CODE BEGIN Init */
-
+    HAL_UARTEx_ReceiveToIdle_IT(&huart8, Uart_Buffer, 255);
     /* USER CODE END Init */
 
     /* USER CODE BEGIN RTOS_MUTEX */
@@ -126,7 +143,7 @@ void MX_FREERTOS_Init(void)
 
     /* Create the queue(s) */
     /* definition and creation of UART_Queue */
-    osMessageQDef(UART_Queue, 128, uint8_t);
+    osMessageQDef(UART_Queue, 256, uint8_t);
     UART_QueueHandle = osMessageCreate(osMessageQ(UART_Queue), NULL);
 
     /* USER CODE BEGIN RTOS_QUEUES */
@@ -230,26 +247,39 @@ void SysTime_Task(void const *argument)
 void CJSON_Task(void const *argument)
 {
     /* USER CODE BEGIN CJSON_Task */
-    BaseType_t xReturn;
-    uint32_t r_quque;
+    BaseType_t xResult;
+    uint32_t ulValue;
     /* Infinite loop */
     for (;;)
     {
-        xReturn = xQueueReceive(UART_QueueHandle, &r_quque, portMAX_DELAY);
-        if (xReturn == pdTRUE)
+        xResult = xTaskNotifyWait(0, 0, &ulValue, portMAX_DELAY);
+        if (xResult == pdPASS)
         {
-            printf("%d\r\n", r_quque);
+            printf("Notify received\r\n");
+            printf("length: %d\r\n", ulValue);
+            cJSON *json;
+            json = cJSON_Parse((char*)Uart_Buffer);
+            if (json == NULL)
+                printf("json fmt error:%s\r\n.", cJSON_GetErrorPtr());
+            else
+            {
+                cJSON *object = cJSON_GetObjectItem(json, "state");
+                cJSON *object1 = cJSON_GetObjectItem(object, "desired");
+
+                cJSON *item = cJSON_GetObjectItem(object1, "hz");
+                printf("desired->hz: %d\r\n", item->valueint);
+
+                item = cJSON_GetObjectItem(object1, "temp_comp");
+                printf("desired->temp_comp: %f\r\n", item->valuedouble);
+
+                cJSON_Delete(json);
+            }
         }
-        else
-        {
-            printf("error");
-        }
-        osDelay(1);
+        /* USER CODE END CJSON_Task */
     }
-    /* USER CODE END CJSON_Task */
+
+    /* Private application code --------------------------------------------------*/
+    /* USER CODE BEGIN Application */
+
+    /* USER CODE END Application */
 }
-
-/* Private application code --------------------------------------------------*/
-/* USER CODE BEGIN Application */
-
-/* USER CODE END Application */
