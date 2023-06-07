@@ -136,6 +136,7 @@ D:\JD-Signal\3.Firmware\JD-Signal\EWARM\JD-Signal\BrowseInfo\Application\User\Co
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\Algorithm\Algorithm.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\SaveInCSV\SaveInCSV.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\BodeSetting\BodeSetting.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\cJSON\cJSON.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\LCD\LCD.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\LCD\ST7789.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\LCD\fonts.h \

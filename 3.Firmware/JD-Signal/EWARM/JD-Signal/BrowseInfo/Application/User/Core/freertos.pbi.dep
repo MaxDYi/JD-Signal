@@ -76,6 +76,7 @@ D:\JD-Signal\3.Firmware\JD-Signal\EWARM\JD-Signal\BrowseInfo\Application\User\Co
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\event_groups.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FreeRTOS\Source\include\timers.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Core\Inc\stm32h7xx_it.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\stdio.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\string.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\DLib_Product_string.h \

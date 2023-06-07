@@ -1,29 +1,7 @@
 /* USER CODE BEGIN Header */
-/**
- ******************************************************************************
- * @file    bsp_driver_sd.c for H7 (based on stm32h743i_eval_sd.c)
- * @brief   This file includes a generic uSD card driver.
- *          To be completed by the user according to the board used for the project.
- * @note    Some functions generated as weak: they can be overridden by
- *          - code in user files
- *          - or BSP code from the FW pack files
- *          if such files are added to the generated project (by the user).
- ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2023 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
- ******************************************************************************
- */
 /* USER CODE END Header */
 
 /* USER CODE BEGIN FirstSection */
-/* can be used to modify / undefine following code or add new definitions */
 /* USER CODE END FirstSection */
 /* Includes ------------------------------------------------------------------*/
 #include "bsp_driver_sd.h"
@@ -33,7 +11,6 @@
 extern SD_HandleTypeDef hsd2;
 
 /* USER CODE BEGIN BeforeInitSection */
-/* can be used to modify / undefine following code or add code */
 /* USER CODE END BeforeInitSection */
 /**
   * @brief  Initializes the SD card device.
@@ -62,25 +39,12 @@ __weak uint8_t BSP_SD_Init(void)
   return sd_state;
 }
 /* USER CODE BEGIN AfterInitSection */
-/* can be used to modify previous code / undefine following code / add code */
 /* USER CODE END AfterInitSection */
 
 /* USER CODE BEGIN InterruptMode */
-/**
-  * @brief  Configures Interrupt mode for SD detection pin.
-  * @retval Returns 0
-  */
-__weak uint8_t BSP_SD_ITConfig(void)
-{
-  /* Code to be updated by the user or replaced by one from the FW pack (in a stmxxxx_sd.c file) */
-
-  return (uint8_t)0;
-}
-
 /* USER CODE END InterruptMode */
 
 /* USER CODE BEGIN BeforeReadBlocksSection */
-/* can be used to modify previous code / undefine following code / add code */
 /* USER CODE END BeforeReadBlocksSection */
 /**
   * @brief  Reads block(s) from a specified address in an SD card, in polling mode.
@@ -103,7 +67,6 @@ __weak uint8_t BSP_SD_ReadBlocks(uint32_t *pData, uint32_t ReadAddr, uint32_t Nu
 }
 
 /* USER CODE BEGIN BeforeWriteBlocksSection */
-/* can be used to modify previous code / undefine following code / add code */
 /* USER CODE END BeforeWriteBlocksSection */
 /**
   * @brief  Writes block(s) to a specified address in an SD card, in polling mode.
@@ -126,7 +89,6 @@ __weak uint8_t BSP_SD_WriteBlocks(uint32_t *pData, uint32_t WriteAddr, uint32_t 
 }
 
 /* USER CODE BEGIN BeforeReadDMABlocksSection */
-/* can be used to modify previous code / undefine following code / add code */
 /* USER CODE END BeforeReadDMABlocksSection */
 /**
   * @brief  Reads block(s) from a specified address in an SD card, in DMA mode.
@@ -149,7 +111,6 @@ __weak uint8_t BSP_SD_ReadBlocks_DMA(uint32_t *pData, uint32_t ReadAddr, uint32_
 }
 
 /* USER CODE BEGIN BeforeWriteDMABlocksSection */
-/* can be used to modify previous code / undefine following code / add code */
 /* USER CODE END BeforeWriteDMABlocksSection */
 /**
   * @brief  Writes block(s) to a specified address in an SD card, in DMA mode.
@@ -172,7 +133,6 @@ __weak uint8_t BSP_SD_WriteBlocks_DMA(uint32_t *pData, uint32_t WriteAddr, uint3
 }
 
 /* USER CODE BEGIN BeforeEraseSection */
-/* can be used to modify previous code / undefine following code / add code */
 /* USER CODE END BeforeEraseSection */
 /**
   * @brief  Erases the specified memory area of the given SD card.
@@ -193,7 +153,6 @@ __weak uint8_t BSP_SD_Erase(uint32_t StartAddr, uint32_t EndAddr)
 }
 
 /* USER CODE BEGIN BeforeGetCardStateSection */
-/* can be used to modify previous code / undefine following code / add code */
 /* USER CODE END BeforeGetCardStateSection */
 
 /**
@@ -221,7 +180,6 @@ __weak void BSP_SD_GetCardInfo(HAL_SD_CardInfoTypeDef *CardInfo)
 }
 
 /* USER CODE BEGIN BeforeCallBacksSection */
-/* can be used to modify previous code / undefine following code / add code */
 /* USER CODE END BeforeCallBacksSection */
 /**
   * @brief SD Abort callbacks
@@ -254,35 +212,6 @@ void HAL_SD_RxCpltCallback(SD_HandleTypeDef *hsd)
 }
 
 /* USER CODE BEGIN CallBacksSection_C */
-/**
-  * @brief BSP SD Abort callback
-  * @retval None
-  * @note empty (up to the user to fill it in or to remove it if useless)
-  */
-__weak void BSP_SD_AbortCallback(void)
-{
-
-}
-
-/**
-  * @brief BSP Tx Transfer completed callback
-  * @retval None
-  * @note empty (up to the user to fill it in or to remove it if useless)
-  */
-__weak void BSP_SD_WriteCpltCallback(void)
-{
-
-}
-
-/**
-  * @brief BSP Rx Transfer completed callback
-  * @retval None
-  * @note empty (up to the user to fill it in or to remove it if useless)
-  */
-__weak void BSP_SD_ReadCpltCallback(void)
-{
-
-}
 /* USER CODE END CallBacksSection_C */
 
 /**
@@ -303,5 +232,4 @@ __weak uint8_t BSP_SD_IsDetected(void)
 }
 
 /* USER CODE BEGIN AdditionalCode */
-/* user code can be inserted here */
 /* USER CODE END AdditionalCode */

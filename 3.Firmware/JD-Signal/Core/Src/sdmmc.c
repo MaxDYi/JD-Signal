@@ -1,27 +1,9 @@
 /* USER CODE BEGIN Header */
-/**
-  ******************************************************************************
-  * @file    sdmmc.c
-  * @brief   This file provides code for the configuration
-  *          of the SDMMC instances.
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2023 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "sdmmc.h"
 
 /* USER CODE BEGIN 0 */
-
 /* USER CODE END 0 */
 
 SD_HandleTypeDef hsd2;
@@ -32,11 +14,9 @@ void MX_SDMMC2_SD_Init(void)
 {
 
   /* USER CODE BEGIN SDMMC2_Init 0 */
-
   /* USER CODE END SDMMC2_Init 0 */
 
   /* USER CODE BEGIN SDMMC2_Init 1 */
-
   /* USER CODE END SDMMC2_Init 1 */
   hsd2.Instance = SDMMC2;
   hsd2.Init.ClockEdge = SDMMC_CLOCK_EDGE_RISING;
@@ -45,7 +25,6 @@ void MX_SDMMC2_SD_Init(void)
   hsd2.Init.HardwareFlowControl = SDMMC_HARDWARE_FLOW_CONTROL_ENABLE;
   hsd2.Init.ClockDiv = 0;
   /* USER CODE BEGIN SDMMC2_Init 2 */
-
   /* USER CODE END SDMMC2_Init 2 */
 
 }
@@ -57,7 +36,6 @@ void HAL_SD_MspInit(SD_HandleTypeDef* sdHandle)
   if(sdHandle->Instance==SDMMC2)
   {
   /* USER CODE BEGIN SDMMC2_MspInit 0 */
-
   /* USER CODE END SDMMC2_MspInit 0 */
     /* SDMMC2 clock enable */
     __HAL_RCC_SDMMC2_CLK_ENABLE();
@@ -98,7 +76,6 @@ void HAL_SD_MspInit(SD_HandleTypeDef* sdHandle)
     HAL_NVIC_SetPriority(SDMMC2_IRQn, 5, 0);
     HAL_NVIC_EnableIRQ(SDMMC2_IRQn);
   /* USER CODE BEGIN SDMMC2_MspInit 1 */
-
   /* USER CODE END SDMMC2_MspInit 1 */
   }
 }
@@ -109,7 +86,6 @@ void HAL_SD_MspDeInit(SD_HandleTypeDef* sdHandle)
   if(sdHandle->Instance==SDMMC2)
   {
   /* USER CODE BEGIN SDMMC2_MspDeInit 0 */
-
   /* USER CODE END SDMMC2_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_SDMMC2_CLK_DISABLE();
@@ -131,11 +107,9 @@ void HAL_SD_MspDeInit(SD_HandleTypeDef* sdHandle)
     /* SDMMC2 interrupt Deinit */
     HAL_NVIC_DisableIRQ(SDMMC2_IRQn);
   /* USER CODE BEGIN SDMMC2_MspDeInit 1 */
-
   /* USER CODE END SDMMC2_MspDeInit 1 */
   }
 }
 
 /* USER CODE BEGIN 1 */
-
 /* USER CODE END 1 */

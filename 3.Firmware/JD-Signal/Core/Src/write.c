@@ -4,7 +4,7 @@
 #include "usart.h"
 #pragma module_name = "?__write"
 
-#define DEBUG_UART huart8
+#define DEBUG_UART huart6
 
 /*
  * If the __write implementation uses internal buffering, uncomment
@@ -12,7 +12,7 @@
  * (i.e. flush) when the application terminates.
  */
 
-size_t __write(int handle, const unsigned char* buffer, size_t size)
+size_t __write(int handle, const unsigned char *buffer, size_t size)
 {
     if (buffer == 0)
 
@@ -24,7 +24,6 @@ size_t __write(int handle, const unsigned char* buffer, size_t size)
          */
 
         return 0;
-
     }
     /* This template only writes to "standard out" and "standard err",
      * for all other file handles it returns failure. */
@@ -35,7 +34,7 @@ size_t __write(int handle, const unsigned char* buffer, size_t size)
     }
 
     /* Sending in normal mode */
-    if (HAL_UART_Transmit(&DEBUG_UART, (uint8_t*)buffer, size, 0xFFFF) == HAL_OK)
+    if (HAL_UART_Transmit(&DEBUG_UART, (uint8_t *)buffer, size, 0xFFFF) == HAL_OK)
     {
         return size;
     }

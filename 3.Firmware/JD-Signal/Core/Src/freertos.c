@@ -25,6 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "stm32h7xx_it.h"
 #include "stdio.h"
 #include "string.h"
 #include "math.h"
@@ -38,10 +39,10 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-#define UART_BUFFER_LENGTH 255
+#define UART_BUFFER_SIZE 256
 
 #pragma location = ".RAM_D1"
-uint8_t Uart_Buffer[UART_BUFFER_LENGTH];
+uint8_t Uart_Buffer[UART_BUFFER_SIZE];
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -62,21 +63,19 @@ osThreadId default_TaskHandle;
 osThreadId sysLED_TaskHandle;
 osThreadId sysTime_TaskHandle;
 osThreadId cJSON_TaskHandle;
-osMessageQId UART_QueueHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
-uint8_t Uart_Buffer[255];
+
 void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
 {
-    if (huart->Instance == UART8)
+    if (huart->Instance == USART6)
     {
-        // HAL_UART_Transmit(&huart8, Uart_Buffer, Size, 0xff);
-        // 队列上锁
-        xTaskNotifyFromISR(cJSON_TaskHandle, (uint32_t)Size, eSetValueWithoutOverwrite, NULL);
-        HAL_UARTEx_ReceiveToIdle_IT(&huart8, Uart_Buffer, UART_BUFFER_LENGTH);
+        uint16_t RecCount = UART_BUFFER_SIZE - __HAL_DMA_GET_COUNTER(huart->hdmarx);
+        xTaskNotifyFromISR(cJSON_TaskHandle, RecCount, eSetValueWithoutOverwrite, NULL);
     }
 }
+
 /* USER CODE END FunctionPrototypes */
 
 void Default_Task(void const *argument);
@@ -126,7 +125,8 @@ void vApplicationGetIdleTaskMemory(StaticTask_t **ppxIdleTaskTCBBuffer, StackTyp
 void MX_FREERTOS_Init(void)
 {
     /* USER CODE BEGIN Init */
-    HAL_UARTEx_ReceiveToIdle_IT(&huart8, Uart_Buffer, 255);
+    memset(Uart_Buffer, 0, UART_BUFFER_SIZE);
+    HAL_UARTEx_ReceiveToIdle_DMA(&huart6, Uart_Buffer, UART_BUFFER_SIZE);
     /* USER CODE END Init */
 
     /* USER CODE BEGIN RTOS_MUTEX */
@@ -140,11 +140,6 @@ void MX_FREERTOS_Init(void)
     /* USER CODE BEGIN RTOS_TIMERS */
     /* start timers, add new ones, ... */
     /* USER CODE END RTOS_TIMERS */
-
-    /* Create the queue(s) */
-    /* definition and creation of UART_Queue */
-    osMessageQDef(UART_Queue, 256, uint8_t);
-    UART_QueueHandle = osMessageCreate(osMessageQ(UART_Queue), NULL);
 
     /* USER CODE BEGIN RTOS_QUEUES */
     /* add queues, ... */
@@ -230,6 +225,7 @@ void SysTime_Task(void const *argument)
         sprintf(TimeStamp, "%04d-%02d-%02d %02d:%02d:%02d",
                 RTC_Date.Year + 1970, RTC_Date.Month, RTC_Date.Date,
                 RTC_Time.Hours, RTC_Time.Minutes, RTC_Time.Seconds);
+        // printf("%s\r\n", TimeStamp);
         LCD_ShowString(30, 60, (uint8_t const *)TimeStamp, WHITE, BLACK, 24, 0);
         osDelay(500);
     }
@@ -255,31 +251,54 @@ void CJSON_Task(void const *argument)
         xResult = xTaskNotifyWait(0, 0, &ulValue, portMAX_DELAY);
         if (xResult == pdPASS)
         {
-            printf("Notify received\r\n");
-            printf("length: %d\r\n", ulValue);
-            cJSON *json;
-            json = cJSON_Parse((char*)Uart_Buffer);
-            if (json == NULL)
-                printf("json fmt error:%s\r\n.", cJSON_GetErrorPtr());
+            // printf("receive length: %ld\r\n", ulValue);
+            // printf("%s\r\n", Uart_Buffer);
+            cJSON *cjson = cJSON_Parse((char *)Uart_Buffer);
+            char *str = cJSON_Print(cjson);
+            // printf("%s\n", str);
+            if (cjson == NULL)
+            {
+                printf("parse fail.\n");
+            }
             else
             {
-                cJSON *object = cJSON_GetObjectItem(json, "state");
-                cJSON *object1 = cJSON_GetObjectItem(object, "desired");
-
-                cJSON *item = cJSON_GetObjectItem(object1, "hz");
-                printf("desired->hz: %d\r\n", item->valueint);
-
-                item = cJSON_GetObjectItem(object1, "temp_comp");
-                printf("desired->temp_comp: %f\r\n", item->valuedouble);
-
-                cJSON_Delete(json);
+                cJSON *cjson_function = cJSON_GetObjectItem(cjson, "function");
+                if (strcmp(cjson_function->valuestring, "time") == 0)
+                {
+                    cJSON *cjson_time = cJSON_GetObjectItem(cjson, "time");
+                    cJSON *cjson_yaer = cJSON_GetObjectItem(cjson_time, "year");
+                    cJSON *cjson_month = cJSON_GetObjectItem(cjson_time, "month");
+                    cJSON *cjson_day = cJSON_GetObjectItem(cjson_time, "day");
+                    cJSON *cjson_hour = cJSON_GetObjectItem(cjson_time, "hour");
+                    cJSON *cjson_minute = cJSON_GetObjectItem(cjson_time, "minute");
+                    cJSON *cjson_second = cJSON_GetObjectItem(cjson_time, "second");
+                    printf("year: %d\r\n", cjson_yaer->valueint);
+                    printf("month: %d\r\n", cjson_month->valueint);
+                    printf("day: %d\r\n", cjson_day->valueint);
+                    printf("hour: %d\r\n", cjson_hour->valueint);
+                    printf("minute: %d\r\n", cjson_minute->valueint);
+                    printf("second: %d\r\n", cjson_second->valueint);
+                    RTC_DateTypeDef RTC_Date;
+                    RTC_TimeTypeDef RTC_Time;
+                    RTC_Date.Year = cjson_yaer->valueint;
+                    RTC_Date.Month = cjson_month->valueint;
+                    RTC_Date.Date = cjson_day->valueint;
+                    RTC_Time.Hours = cjson_hour->valueint;
+                    RTC_Time.Minutes = cjson_minute->valueint;
+                    RTC_Time.Seconds = cjson_second->valueint;
+                    HAL_RTC_SetDate(&hrtc, &RTC_Date, RTC_FORMAT_BIN);
+                    HAL_RTC_SetTime(&hrtc, &RTC_Time, RTC_FORMAT_BIN);
+                }
             }
+            cJSON_Delete(cjson);
         }
-        /* USER CODE END CJSON_Task */
+        ulValue = 0;
+        HAL_UARTEx_ReceiveToIdle_DMA(&huart6, Uart_Buffer, UART_BUFFER_SIZE);
     }
-
-    /* Private application code --------------------------------------------------*/
-    /* USER CODE BEGIN Application */
-
-    /* USER CODE END Application */
+    /* USER CODE END CJSON_Task */
 }
+
+/* Private application code --------------------------------------------------*/
+/* USER CODE BEGIN Application */
+
+/* USER CODE END Application */
