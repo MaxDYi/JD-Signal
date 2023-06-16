@@ -107,7 +107,16 @@ int main(void)
   MX_ADC2_Init();
   MX_SPI4_Init();
   /* USER CODE BEGIN 2 */
-    // printf("\r\nJD-Signal\r\n");
+    printf("\r\nJD-Signal\r\n");
+
+    HAL_ADCEx_Calibration_Start(&hadc1, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED);
+    HAL_ADCEx_Calibration_Start(&hadc2, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED);
+    HAL_ADCEx_Calibration_Start(&hadc3, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED);
+
+    HAL_ADCEx_Calibration_Start(&hadc1, ADC_CALIB_OFFSET_LINEARITY, ADC_SINGLE_ENDED);
+    HAL_ADCEx_Calibration_Start(&hadc2, ADC_CALIB_OFFSET_LINEARITY, ADC_SINGLE_ENDED);
+    HAL_ADCEx_Calibration_Start(&hadc3, ADC_CALIB_OFFSET_LINEARITY, ADC_SINGLE_ENDED);
+
     LED_Init();
     Relay_Init();
     HAL_Delay(100);
@@ -120,11 +129,8 @@ int main(void)
     LCD_Fill(0, 0, LCD_W, LCD_H, BLACK);
     LCD_ShowString(30, 30, "JD-Signal", WHITE, BLACK, 24, 0);
 
-    // ADC_Calibration();
-    //  AcquireData();
     LTC6912_SetGain(2, 1);
     LTC6912_SetGain(2, 2);
-
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */

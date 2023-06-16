@@ -33,12 +33,22 @@
 #include "LCD.h"
 #include "stdlib.h"
 #include "rtc.h"
+#include "adc.h"
+#include "tim.h"
 #include "usart.h"
 #include "cJSON.h"
+#include "Algorithm.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+#define DEBUG_UART huart6
+
+#pragma location = ".RAM_D1"
+uint16_t ADC1_Buffer[ADC_COUNT];
+#pragma location = ".RAM_D1"
+uint16_t ADC2_Buffer[ADC_COUNT];
+
 #define UART_BUFFER_SIZE 256
 
 #pragma location = ".RAM_D1"
@@ -63,9 +73,13 @@ osThreadId default_TaskHandle;
 osThreadId sysLED_TaskHandle;
 osThreadId sysTime_TaskHandle;
 osThreadId cJSON_TaskHandle;
+osThreadId analyze_TaskHandle;
+osThreadId sysTemp_TaskHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
+__IO uint8_t ADC1ConvEnd = 0;
+__IO uint8_t ADC2ConvEnd = 0;
 
 void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
 {
@@ -76,12 +90,30 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
     }
 }
 
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
+{
+    if (hadc == &hadc1)
+    {
+        ADC1ConvEnd = 1;
+    }
+    else if (hadc == &hadc2)
+    {
+        ADC2ConvEnd = 1;
+    }
+    if (ADC1ConvEnd == 1 && ADC2ConvEnd == 1)
+    {
+        xTaskNotifyFromISR(analyze_TaskHandle, 1, eSetValueWithoutOverwrite, NULL);
+    }
+}
+
 /* USER CODE END FunctionPrototypes */
 
 void Default_Task(void const *argument);
 void SysLED_Task(void const *argument);
 void SysTime_Task(void const *argument);
 void CJSON_Task(void const *argument);
+void Analyze_Task(void const *argument);
+void SysTemp_Task(void const *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -127,6 +159,11 @@ void MX_FREERTOS_Init(void)
     /* USER CODE BEGIN Init */
     memset(Uart_Buffer, 0, UART_BUFFER_SIZE);
     HAL_UARTEx_ReceiveToIdle_DMA(&huart6, Uart_Buffer, UART_BUFFER_SIZE);
+
+    cJSON_Hooks hooks;
+    hooks.malloc_fn = pvPortMalloc;
+    hooks.free_fn = vPortFree;
+    cJSON_InitHooks(&hooks);
     /* USER CODE END Init */
 
     /* USER CODE BEGIN RTOS_MUTEX */
@@ -159,8 +196,16 @@ void MX_FREERTOS_Init(void)
     sysTime_TaskHandle = osThreadCreate(osThread(sysTime_Task), NULL);
 
     /* definition and creation of cJSON_Task */
-    osThreadDef(cJSON_Task, CJSON_Task, osPriorityLow, 0, 128);
+    osThreadDef(cJSON_Task, CJSON_Task, osPriorityLow, 0, 1024);
     cJSON_TaskHandle = osThreadCreate(osThread(cJSON_Task), NULL);
+
+    /* definition and creation of analyze_Task */
+    osThreadDef(analyze_Task, Analyze_Task, osPriorityNormal, 0, 1024);
+    analyze_TaskHandle = osThreadCreate(osThread(analyze_Task), NULL);
+
+    /* definition and creation of sysTemp_Task */
+    osThreadDef(sysTemp_Task, SysTemp_Task, osPriorityIdle, 0, 128);
+    sysTemp_TaskHandle = osThreadCreate(osThread(sysTemp_Task), NULL);
 
     /* USER CODE BEGIN RTOS_THREADS */
     /* add threads, ... */
@@ -227,7 +272,7 @@ void SysTime_Task(void const *argument)
                 RTC_Time.Hours, RTC_Time.Minutes, RTC_Time.Seconds);
         // printf("%s\r\n", TimeStamp);
         LCD_ShowString(30, 60, (uint8_t const *)TimeStamp, WHITE, BLACK, 24, 0);
-        osDelay(500);
+        osDelay(1000);
     }
 
     /* USER CODE END SysTime_Task */
@@ -251,11 +296,8 @@ void CJSON_Task(void const *argument)
         xResult = xTaskNotifyWait(0, 0, &ulValue, portMAX_DELAY);
         if (xResult == pdPASS)
         {
-            // printf("receive length: %ld\r\n", ulValue);
-            // printf("%s\r\n", Uart_Buffer);
             cJSON *cjson = cJSON_Parse((char *)Uart_Buffer);
             char *str = cJSON_Print(cjson);
-            // printf("%s\n", str);
             if (cjson == NULL)
             {
                 printf("parse fail.\n");
@@ -272,30 +314,84 @@ void CJSON_Task(void const *argument)
                     cJSON *cjson_hour = cJSON_GetObjectItem(cjson_time, "hour");
                     cJSON *cjson_minute = cJSON_GetObjectItem(cjson_time, "minute");
                     cJSON *cjson_second = cJSON_GetObjectItem(cjson_time, "second");
-                    printf("year: %d\r\n", cjson_yaer->valueint);
-                    printf("month: %d\r\n", cjson_month->valueint);
-                    printf("day: %d\r\n", cjson_day->valueint);
-                    printf("hour: %d\r\n", cjson_hour->valueint);
-                    printf("minute: %d\r\n", cjson_minute->valueint);
-                    printf("second: %d\r\n", cjson_second->valueint);
                     RTC_DateTypeDef RTC_Date;
                     RTC_TimeTypeDef RTC_Time;
-                    RTC_Date.Year = cjson_yaer->valueint;
+                    RTC_Date.Year = cjson_yaer->valueint - 1970;
                     RTC_Date.Month = cjson_month->valueint;
                     RTC_Date.Date = cjson_day->valueint;
+                    RTC_Date.WeekDay = (RTC_Date.Date + 2 * RTC_Date.Month + 3 * (RTC_Date.Month + 1) / 5 + RTC_Date.Year + RTC_Date.Year / 4 - RTC_Date.Year / 100 + RTC_Date.Year / 400) % 7;
                     RTC_Time.Hours = cjson_hour->valueint;
                     RTC_Time.Minutes = cjson_minute->valueint;
                     RTC_Time.Seconds = cjson_second->valueint;
+                    RTC_Time.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
+                    RTC_Time.StoreOperation = RTC_STOREOPERATION_RESET;
                     HAL_RTC_SetDate(&hrtc, &RTC_Date, RTC_FORMAT_BIN);
                     HAL_RTC_SetTime(&hrtc, &RTC_Time, RTC_FORMAT_BIN);
                 }
+                else if (strcmp(cjson_function->valuestring, "test") == 0)
+                {
+                    HAL_ADC_Start_DMA(&hadc1, (uint32_t *)ADC1_Buffer, ADC_COUNT);
+                    HAL_ADC_Start_DMA(&hadc2, (uint32_t *)ADC2_Buffer, ADC_COUNT);
+                    HAL_TIM_Base_Start(&htim4);
+                }
             }
-            cJSON_Delete(cjson);
+            if (cjson != NULL)
+            {
+                cJSON_Delete(cjson);
+            }
         }
-        ulValue = 0;
-        HAL_UARTEx_ReceiveToIdle_DMA(&huart6, Uart_Buffer, UART_BUFFER_SIZE);
+        HAL_UARTEx_ReceiveToIdle_DMA(&DEBUG_UART, Uart_Buffer, UART_BUFFER_SIZE);
     }
     /* USER CODE END CJSON_Task */
+}
+
+/* USER CODE BEGIN Header_Analyze_Task */
+/**
+ * @brief Function implementing the analyze_Tas thread.
+ * @param argument: Not used
+ * @retval None
+ */
+/* USER CODE END Header_Analyze_Task */
+void Analyze_Task(void const *argument)
+{
+    /* USER CODE BEGIN Analyze_Task */
+    BaseType_t xResult;
+    uint32_t ulValue;
+    /* Infinite loop */
+    for (;;)
+    {
+        xResult = xTaskNotifyWait(0, 0, &ulValue, portMAX_DELAY);
+        if (xResult == pdPASS)
+        {
+            if (ulValue == 1)
+            {
+                HAL_TIM_Base_Stop(&htim4);
+                HAL_ADC_Stop_DMA(&hadc1);
+                HAL_ADC_Stop_DMA(&hadc2);
+                // printf("ADC Finish\r\n");
+                // TODO: Analyze
+            }
+        }
+    }
+    /* USER CODE END Analyze_Task */
+}
+
+/* USER CODE BEGIN Header_SysTemp_Task */
+/**
+ * @brief Function implementing the sysTemp_Task thread.
+ * @param argument: Not used
+ * @retval None
+ */
+/* USER CODE END Header_SysTemp_Task */
+void SysTemp_Task(void const *argument)
+{
+    /* USER CODE BEGIN SysTemp_Task */
+    /* Infinite loop */
+    for (;;)
+    {
+        osDelay(1);
+    }
+    /* USER CODE END SysTemp_Task */
 }
 
 /* Private application code --------------------------------------------------*/
