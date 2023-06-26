@@ -47,7 +47,7 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=JD-Signal-SCH-V2.0.SchDoc
+DocumentPath=JD-Signal.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=1
@@ -115,7 +115,7 @@ GenerateClassCluster=0
 DocumentUniqueId=EEUBOLII
 
 [Document5]
-DocumentPath=JD-Signal-PCB-V2.0.PcbDoc
+DocumentPath=JD-Signal.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -1285,7 +1285,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LESGNBJY
 
 [Document74]
 DocumentPath=..\..\..\AD封装库\原理图库\0.2 - 二极管-TVS-ESD-整流桥-放电管.SchLib
@@ -1302,7 +1302,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=DHQJEYGG
 
 [Document75]
 DocumentPath=..\..\..\AD封装库\原理图库\0.3 - LED发光二极管-IR二极管_接收管-光耦.SchLib
@@ -1319,7 +1319,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=WBYAVEBV
 
 [Document76]
 DocumentPath=..\..\..\AD封装库\原理图库\0.4 - 三极管-场效应管-可控硅.SchLib
@@ -1336,7 +1336,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=DWGNAPYD
 
 [Document77]
 DocumentPath=..\..\..\AD封装库\原理图库\0.5 - 按键_开关_蜂鸣器_电池_测试点_Mark点_铜柱.SchLib
@@ -1353,7 +1353,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=BSHGGOIF
 
 [Document78]
 DocumentPath=..\..\..\AD封装库\原理图库\0.6 - 电源_音频_USB Type-C_HDMI_XT60_5557_D-SUB_RJ45_SD-TF_SIM插座.SchLib
@@ -1370,7 +1370,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LSVNXECH
 
 [Document79]
 DocumentPath=..\..\..\AD封装库\原理图库\0.7 - 电源类芯片.SchLib
@@ -1387,7 +1387,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=XDLINDVW
 
 [Document80]
 DocumentPath=..\..\..\AD封装库\原理图库\0.8 - 常见芯片.SchLib
@@ -1404,7 +1404,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=QHAUEOTQ
 
 [Document81]
 DocumentPath=..\..\..\AD封装库\原理图库\0.9 - 传感器-存储器-模块.SchLib
@@ -1421,7 +1421,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=PNOGYNFJ
 
 [Document82]
 DocumentPath=..\..\..\AD封装库\原理图库\1.0 - DDR2-DDR3-LPDDR4-RMII PHY.SchLib
@@ -1438,7 +1438,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=VUSNGUCS
 
 [Document83]
 DocumentPath=..\..\..\AD封装库\原理图库\1.1 - 74系列TTL逻辑芯片.SchLib
@@ -1455,7 +1455,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=PYHOCTSS
 
 [Document84]
 DocumentPath=..\..\..\AD封装库\原理图库\1.2 - CD4000系列逻辑芯片.SCHLIB
@@ -1472,7 +1472,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=YPFFTUWP
 
 [Document85]
 DocumentPath=..\..\..\AD封装库\原理图库\1.3 - 数码管-TFT-OLED屏.SchLib
@@ -1489,7 +1489,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=OGWGFISY
 
 [Document86]
 DocumentPath=..\..\..\AD封装库\原理图库\1.4 - 继电器-变压器.SchLib
@@ -1506,7 +1506,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=NYKBMAEB
 
 [Document87]
 DocumentPath=..\..\..\AD封装库\原理图库\1.5 - 精密运放-比较器.SchLib
@@ -1523,7 +1523,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=QMEOYIRH
 
 [Document88]
 DocumentPath=..\..\..\AD封装库\原理图库\1.6 - MAX系列芯片.SchLib
@@ -1540,7 +1540,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=SYTHQGVU
 
 [Document89]
 DocumentPath=..\..\..\AD封装库\原理图库\1.7 - WiFi天线-SMA射频座.SchLib
@@ -1557,7 +1557,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LGIRKHUT
 
 [Document90]
 DocumentPath=..\..\..\AD封装库\原理图库\1.8 - CH340系列编程器芯片.SchLib
@@ -1574,7 +1574,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=SJPVBJSM
 
 [Document91]
 DocumentPath=..\..\..\AD封装库\原理图库\2.0 - STM8L-STM8S-STM8AF系列单片机.SchLib
@@ -1591,7 +1591,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=QKXLWLHC
 
 [Document92]
 DocumentPath=..\..\..\AD封装库\原理图库\2.1 - STM32 G0及G4系列单片机.SchLib
@@ -1608,7 +1608,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=UFROFOQE
 
 [Document93]
 DocumentPath=..\..\..\AD封装库\原理图库\2.3 - STM32 F0系列单片机.SchLib
@@ -1625,7 +1625,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=VXXDRPUO
 
 [Document94]
 DocumentPath=..\..\..\AD封装库\原理图库\2.4 - STM32 F1系列单片机.SchLib
@@ -1642,7 +1642,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=AIHVGUDI
 
 [Document95]
 DocumentPath=..\..\..\AD封装库\原理图库\2.5 - STM32 F2系列单片机.SchLib
@@ -1659,7 +1659,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=HGASSYDM
 
 [Document96]
 DocumentPath=..\..\..\AD封装库\原理图库\2.6 - STM32 F3系列单片机.SchLib
@@ -1676,7 +1676,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JYBNKMSI
 
 [Document97]
 DocumentPath=..\..\..\AD封装库\原理图库\2.7 - STM32 F4系列单片机.SchLib
@@ -1693,7 +1693,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=EEJWMNBH
 
 [Document98]
 DocumentPath=..\..\..\AD封装库\原理图库\2.8 - STM32 F7及H7系列单片机.SchLib
@@ -1710,7 +1710,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=YADSNJTP
 
 [Document99]
 DocumentPath=..\..\..\AD封装库\原理图库\3.0 - STM32L0-L1-L4系列单片机.SchLib
@@ -1727,7 +1727,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=IHOWQKIV
 
 [Document100]
 DocumentPath=..\..\..\AD封装库\原理图库\3.1 - STM32W系列单片机.SchLib
@@ -1744,7 +1744,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=FQNTVIAU
 
 [Document101]
 DocumentPath=..\..\..\AD封装库\原理图库\3.2 - NXP Cortex-M4系列单片机.SchLib
@@ -1761,7 +1761,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=TNMGJGJN
 
 [Document102]
 DocumentPath=..\..\..\AD封装库\原理图库\3.3 - STC系列单片机.SchLib
@@ -1778,7 +1778,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LIVGDXGQ
 
 [Document103]
 DocumentPath=..\..\..\AD封装库\原理图库\3.4 - Holtek合泰单片机.SchLib
@@ -1795,7 +1795,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=UCMKHSFS
 
 [Document104]
 DocumentPath=..\..\..\AD封装库\原理图库\3.5 - Atmel megaAVR系列单片机.SchLib
@@ -1812,7 +1812,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LDSIOOKI
 
 [Document105]
 DocumentPath=..\..\..\AD封装库\原理图库\3.6 - 新塘单片机.SchLib
@@ -1829,7 +1829,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=PJIWOBNV
 
 [Document106]
 DocumentPath=..\..\..\AD封装库\原理图库\3.7 - MSP430系列单片机.SchLib
@@ -1846,7 +1846,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=BQYWLHPE
 
 [Document107]
 DocumentPath=..\..\..\AD封装库\原理图库\3.8 - PIC系列单片机.SchLib
@@ -1863,7 +1863,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=PEGEYPAW
 
 [Document108]
 DocumentPath=..\..\..\AD封装库\原理图库\4.0 - OV系列CMOS图像传感器.SchLib
@@ -1880,7 +1880,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=DHDBHPWJ
 
 [Document109]
 DocumentPath=..\..\..\AD封装库\原理图库\4.4 - ADC模数转换器件.SchLib
@@ -1897,7 +1897,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=WMFFRAUP
 
 [Document110]
 DocumentPath=..\..\..\AD封装库\原理图库\4.5 - 电子管.SchLib
@@ -1914,7 +1914,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=QIDTKAGM
 
 [Document111]
 DocumentPath=..\..\..\AD封装库\原理图库\4.9 - 0.5mm连接器(FPC0.5).SchLib
@@ -1931,7 +1931,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=RUYFIPPJ
 
 [Document112]
 DocumentPath=..\..\..\AD封装库\原理图库\5.0 - 1.00mm连接器(FPC1.0_SH1.0_1.0排针排母).SchLib
@@ -1948,7 +1948,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=HBPELDQV
 
 [Document113]
 DocumentPath=..\..\..\AD封装库\原理图库\5.1 - 1.25mm连接器(FPC1.25_GH1.25_MX1.25).SchLib
@@ -1965,7 +1965,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=UWUBASLH
 
 [Document114]
 DocumentPath=..\..\..\AD封装库\原理图库\5.2 - 1.27mm连接器(1.27排针排母).SchLib
@@ -1982,7 +1982,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JFGPDXFI
 
 [Document115]
 DocumentPath=..\..\..\AD封装库\原理图库\5.3 - 1.50mm连接器(ZH1.5).SchLib
@@ -1999,7 +1999,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=DVANRWSO
 
 [Document116]
 DocumentPath=..\..\..\AD封装库\原理图库\5.4 - 2.0mm连接器(PHB2.0_PHD2.0_2.0排针排母).SchLib
@@ -2016,7 +2016,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=SOAYLRUI
 
 [Document117]
 DocumentPath=..\..\..\AD封装库\原理图库\5.5 - 2.54mm连接器(KF2EDGK_XH2.54_2.54排针排母).SchLib
@@ -2050,7 +2050,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=GOISLAGV
 
 [Document119]
 DocumentPath=..\..\..\AD封装库\原理图库\5.7 - 3.81mm连接器(KF128-KF2EDGVHM).SchLib
@@ -2067,7 +2067,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LPBPLGVC
 
 [Document120]
 DocumentPath=..\..\..\AD封装库\原理图库\5.8 - 3.96mm连接器(HT3.96).SchLib
@@ -2084,7 +2084,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=EJTLJKSL
 
 [Document121]
 DocumentPath=..\..\..\AD封装库\原理图库\6.0 - 5.0mm连接器(KF301-KF2EDGVHM).SchLib
@@ -2101,7 +2101,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=AHDALPLI
 
 [Document122]
 DocumentPath=..\..\..\AD封装库\原理图库\6.1 - 5.08mm连接器(KF128-KF2EDGK-KF2EDGVHM-5.08).SchLib
@@ -2118,7 +2118,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=TSPEPTPV
 
 [Document123]
 DocumentPath=..\..\..\AD封装库\原理图库\6.2 - 7.62mm连接器(KF7620).SchLib
@@ -2135,7 +2135,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=LVVTOMJM
 
 [Document124]
 DocumentPath=..\..\..\AD封装库\原理图库\6.5 - 9.5mm连接器(KFHB9500).SchLib
@@ -2152,7 +2152,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=WWVXKMRS
 
 [Document125]
 DocumentPath=..\..\..\AD封装库\原理图库\7.0 - 数字符号.SCHLIB
@@ -2169,7 +2169,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=KOCPHDQP
 
 [Document126]
 DocumentPath=..\..\..\AD封装库\原理图库\7.1 - 模拟符号.SCHLIB
@@ -2186,14 +2186,102 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=CAHIYIYM
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for JD-Singal\Design Rule Check - JD-Signal-PCB-V2.html
+DocumentPath=Project Outputs for JD-Singal\Assembly Testpoint Report for JD-Signal.ipc
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for JD-Singal\Net Status - JD-Signal-PCB-V2.html
+DocumentPath=Project Outputs for JD-Singal\JD-Signal-RoundHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal-SlotHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.GD1
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.GG1
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.GKO
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.GP1
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.GP2
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.REP
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs for JD-Singal\JD-Signal.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for JD-Singal\Pick Place for JD-Signal.csv
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs for JD-Singal\Pick Place for JD-Signal.txt
 DItemRevisionGUID=
 
 [Configuration1]
@@ -2436,44 +2524,15 @@ Name=Assembly Outputs
 Description=
 TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=Assembly
-OutputName1=Assembly Drawings
+OutputType1=Test Points For Assembly
+OutputName1=Test Point Report
 OutputDocumentPath1=
 OutputVariantName1=[No Variations]
 OutputDefault1=0
-PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.20|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=0|PaperKind=A4|PaperIndex=9
 Configuration1_Name1=ForceUpdateSettings
 Configuration1_Item1=False
 Configuration1_Name2=OutputConfigurationParameter1
-Configuration1_Item2=DesignatorDisplayMode=Physical|PrintArea=DesignExtent|PrintAreaLowerLeftCornerX=0|PrintAreaLowerLeftCornerY=0|PrintAreaUpperRightCornerX=0|PrintAreaUpperRightCornerY=0|Record=PcbPrintView|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-Configuration1_Name3=OutputConfigurationParameter2
-Configuration1_Item3=IncludeBoardCutouts=False|IncludeBottomLayerComponents=False|IncludeMultiLayerComponents=True|IncludeTopLayerComponents=True|IncludeViewports=True|Index=0|Mirror=False|Name=Top LayerAssembly Drawing|PadNumberFontSize=14|Record=PcbPrintOut|ShowHoles=False|ShowPadNets=False|ShowPadNumbers=False|SubstituteFonts=False|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-Configuration1_Name4=OutputConfigurationParameter3
-Configuration1_Item4=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Hidden|FFill=Hidden|FPad=Hidden|FRegion=Hidden|FText=Hidden|FTrack=Hidden|FVia=Hidden|Layer=TopLayer|Polygon=Hidden|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-Configuration1_Name5=OutputConfigurationParameter4
-Configuration1_Item5=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=TopOverlay|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-Configuration1_Name6=OutputConfigurationParameter5
-Configuration1_Item6=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Hidden|Layer=MultiLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-Configuration1_Name7=OutputConfigurationParameter6
-Configuration1_Item7=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical1|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-Configuration1_Name8=OutputConfigurationParameter7
-Configuration1_Item8=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical13|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-Configuration1_Name9=OutputConfigurationParameter8
-Configuration1_Item9=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical15|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-Configuration1_Name10=OutputConfigurationParameter9
-Configuration1_Item10=IncludeBoardCutouts=False|IncludeBottomLayerComponents=True|IncludeMultiLayerComponents=True|IncludeTopLayerComponents=False|IncludeViewports=True|Index=1|Mirror=False|Name=Bottom LayerAssembly Drawing|PadNumberFontSize=14|Record=PcbPrintOut|ShowHoles=False|ShowPadNets=False|ShowPadNumbers=False|SubstituteFonts=False|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-Configuration1_Name11=OutputConfigurationParameter10
-Configuration1_Item11=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Hidden|FFill=Hidden|FPad=Hidden|FRegion=Hidden|FText=Hidden|FTrack=Hidden|FVia=Hidden|Layer=BottomLayer|Polygon=Hidden|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-Configuration1_Name12=OutputConfigurationParameter11
-Configuration1_Item12=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=BottomOverlay|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-Configuration1_Name13=OutputConfigurationParameter12
-Configuration1_Item13=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Hidden|Layer=MultiLayer|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-Configuration1_Name14=OutputConfigurationParameter13
-Configuration1_Item14=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical1|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-Configuration1_Name15=OutputConfigurationParameter14
-Configuration1_Item15=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical13|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-Configuration1_Name16=OutputConfigurationParameter15
-Configuration1_Item16=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical15|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
+Configuration1_Item2=AssyAdjacencyDistance=250000|AssyGenerateCSVFormat=False|AssyGenerateIPCFormat=True|AssyGenerateSpreadSheetFormat=False|AssyGenerateTextFormat=False|AssyMergeNetTieNets=False|AssyOriginPosition=Relative|AssyOutlineLayer=56|AssyOutputAdjancencies=False|AssyOutputBoardOutline=False|AssyOutputTraces=False|AssyReportBottomLayerTestpoints=True|AssyReportTopLayerTestpoints=True|AssyUnits=Imperial|Record=TestPointView|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
 OutputType2=Pick Place
 OutputName2=Generates pick and place files
 OutputDocumentPath2=
@@ -2482,99 +2541,128 @@ OutputDefault2=0
 Configuration2_Name1=ForceUpdateSettings
 Configuration2_Item1=False
 Configuration2_Name2=OutputConfigurationParameter1
-Configuration2_Item2=Record=PickPlaceView|Units=Imperial|GenerateCSVFormat=False|GenerateTextFormat=True|ShowUnits=False|Separator=.|ExcludeFilterParam=False|IncludeVariations=False|IncludeStandardNoBOM=True|Filter= |FilterActive=False|YFlip=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:None,Position:0|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:True,Sort:None,Position:1|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:True,Sort:None,Position:2|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:True,Sort:None,Position:3|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:4|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:5|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:6|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:True,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:11|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:12|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:13|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:14|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:15|Column#17=Name:Manufacturer_Part_Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:18|Column#18=Name:Vendor,Fixed:False,Metric:False,Visible:False,Sort:None,Position:22|Column#19=Name:封装库来自淘宝卖家：黄晶宝石,Fixed:False,Metric:False,Visible:False,Sort:None,Position:25|Column#20=Name:联系下单店铺卖家 免费技术支持,Fixed:False,Metric:False,Visible:False,Sort:None,Position:30|Column#21=Name:Copyright,Fixed:False,Metric:False,Visible:False,Sort:None,Position:17|Column#22=Name:联系卖家 免费查找封装,Fixed:False,Metric:False,Visible:False,Sort:None,Position:27|Column#23=Name:联系下单店铺卖家 免费帮你查找封装,Fixed:False,Metric:False,Visible:False,Sort:None,Position:29|Column#24=Name:Mfr_Name,Fixed:False,Metric:False,Visible:False,Sort:None,Position:19|Column#25=Name:Type,Fixed:False,Metric:False,Visible:False,Sort:None,Position:21|Column#26=Name:联系卖家，免费查找封装,Fixed:False,Metric:False,Visible:False,Sort:None,Position:28|Column#27=Name:RefDes,Fixed:False,Metric:False,Visible:False,Sort:None,Position:20|Column#28=Name:芯片厂商,Fixed:False,Metric:False,Visible:False,Sort:None,Position:31|Column#29=Name:当前库版本V2022.10.7 @黄晶宝石,Fixed:False,Metric:False,Visible:False,Sort:None,Position:23|Column#30=Name:BOM名称,Fixed:False,Metric:False,Visible:False,Sort:None,Position:16|Column#31=Name:封装库来自淘宝卖家ID：黄晶宝石,Fixed:False,Metric:False,Visible:False,Sort:None,Position:26|Column#32=Name:封装库来自淘宝卖家 ID：黄晶宝石,Fixed:False,Metric:False,Visible:False,Sort:None,Position:24|Column#33=Name:ComponentLink2URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:36|Column#34=Name:LatestRevisionNote,Fixed:False,Metric:False,Visible:False,Sort:None,Position:39|Column#35=Name:Code_JEDEC,Fixed:False,Metric:False,Visible:False,Sort:None,Position:32|Column#36=Name:ComponentLink2Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:35|Column#37=Name:PackageDescription,Fixed:False,Metric:False,Visible:False,Sort:None,Position:40|Column#38=Name:ComponentLink1URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:34|Column#39=Name:LatestRevisionDate,Fixed:False,Metric:False,Visible:False,Sort:None,Position:38|Column#40=Name:PackageReference,Fixed:False,Metric:False,Visible:False,Sort:None,Position:41|Column#41=Name:Publisher,Fixed:False,Metric:False,Visible:False,Sort:None,Position:43|Column#42=Name:ComponentLink1Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:33|Column#43=Name:DatasheetVersion,Fixed:False,Metric:False,Visible:False,Sort:None,Position:37|Column#44=Name:Published,Fixed:False,Metric:False,Visible:False,Sort:None,Position:42|Column#45=Name:PackageVersion,Fixed:False,Metric:False,Visible:False,Sort:None,Position:44|Column#46=Name:当前库版本V2022.10.7 @淘宝卖家:黄晶宝石,Fixed:False,Metric:False,Visible:False,Sort:None,Position:45|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-OutputType3=Test Points For Assembly
-OutputName3=Test Point Report
+Configuration2_Item2=Record=PickPlaceView|Units=Imperial|GenerateCSVFormat=True|GenerateTextFormat=True|ShowUnits=False|Separator=.|ExcludeFilterParam=False|IncludeVariations=False|IncludeStandardNoBOM=True|Filter= |FilterActive=False|YFlip=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:None,Position:0|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:True,Sort:None,Position:1|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:True,Sort:None,Position:2|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:True,Sort:None,Position:3|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:4|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:5|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:6|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:True,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:11|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:12|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:13|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:14|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:15|Column#17=Name:Manufacturer_Part_Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:18|Column#18=Name:Vendor,Fixed:False,Metric:False,Visible:False,Sort:None,Position:22|Column#19=Name:封装库来自淘宝卖家：黄晶宝石,Fixed:False,Metric:False,Visible:False,Sort:None,Position:25|Column#20=Name:联系下单店铺卖家 免费技术支持,Fixed:False,Metric:False,Visible:False,Sort:None,Position:30|Column#21=Name:Copyright,Fixed:False,Metric:False,Visible:False,Sort:None,Position:17|Column#22=Name:联系卖家 免费查找封装,Fixed:False,Metric:False,Visible:False,Sort:None,Position:27|Column#23=Name:联系下单店铺卖家 免费帮你查找封装,Fixed:False,Metric:False,Visible:False,Sort:None,Position:29|Column#24=Name:Mfr_Name,Fixed:False,Metric:False,Visible:False,Sort:None,Position:19|Column#25=Name:Type,Fixed:False,Metric:False,Visible:False,Sort:None,Position:21|Column#26=Name:联系卖家，免费查找封装,Fixed:False,Metric:False,Visible:False,Sort:None,Position:28|Column#27=Name:RefDes,Fixed:False,Metric:False,Visible:False,Sort:None,Position:20|Column#28=Name:芯片厂商,Fixed:False,Metric:False,Visible:False,Sort:None,Position:31|Column#29=Name:当前库版本V2022.10.7 @黄晶宝石,Fixed:False,Metric:False,Visible:False,Sort:None,Position:23|Column#30=Name:BOM名称,Fixed:False,Metric:False,Visible:False,Sort:None,Position:16|Column#31=Name:封装库来自淘宝卖家ID：黄晶宝石,Fixed:False,Metric:False,Visible:False,Sort:None,Position:26|Column#32=Name:封装库来自淘宝卖家 ID：黄晶宝石,Fixed:False,Metric:False,Visible:False,Sort:None,Position:24|Column#33=Name:ComponentLink2URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:36|Column#34=Name:LatestRevisionNote,Fixed:False,Metric:False,Visible:False,Sort:None,Position:39|Column#35=Name:Code_JEDEC,Fixed:False,Metric:False,Visible:False,Sort:None,Position:32|Column#36=Name:ComponentLink2Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:35|Column#37=Name:PackageDescription,Fixed:False,Metric:False,Visible:False,Sort:None,Position:40|Column#38=Name:ComponentLink1URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:34|Column#39=Name:LatestRevisionDate,Fixed:False,Metric:False,Visible:False,Sort:None,Position:38|Column#40=Name:PackageReference,Fixed:False,Metric:False,Visible:False,Sort:None,Position:41|Column#41=Name:Publisher,Fixed:False,Metric:False,Visible:False,Sort:None,Position:43|Column#42=Name:ComponentLink1Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:33|Column#43=Name:DatasheetVersion,Fixed:False,Metric:False,Visible:False,Sort:None,Position:37|Column#44=Name:Published,Fixed:False,Metric:False,Visible:False,Sort:None,Position:42|Column#45=Name:PackageVersion,Fixed:False,Metric:False,Visible:False,Sort:None,Position:44|Column#46=Name:属性,Fixed:False,Metric:False,Visible:False,Sort:None,Position:45|Column#47=Name:当前库版本V2022.12.25 @淘宝卖家:黄晶宝石,Fixed:False,Metric:False,Visible:False,Sort:None,Position:47|Column#48=Name:当前库版本V2022.10.7 @淘宝卖家:黄晶宝石,Fixed:False,Metric:False,Visible:False,Sort:None,Position:46|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
+OutputType3=Assembly
+OutputName3=Assembly Drawings
 OutputDocumentPath3=
 OutputVariantName3=[No Variations]
 OutputDefault3=0
+PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.50|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=0|PaperKind=A4|PaperIndex=9
 Configuration3_Name1=ForceUpdateSettings
 Configuration3_Item1=False
 Configuration3_Name2=OutputConfigurationParameter1
-Configuration3_Item2=AssyAdjacencyDistance=250000|AssyGenerateCSVFormat=False|AssyGenerateIPCFormat=True|AssyGenerateSpreadSheetFormat=False|AssyGenerateTextFormat=False|AssyMergeNetTieNets=False|AssyOriginPosition=Relative|AssyOutlineLayer=56|AssyOutputAdjancencies=False|AssyOutputBoardOutline=False|AssyOutputTraces=False|AssyReportBottomLayerTestpoints=True|AssyReportTopLayerTestpoints=True|AssyUnits=Imperial|Record=TestPointView|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
+Configuration3_Item2=DesignatorDisplayMode=Physical|PrintArea=DesignExtent|PrintAreaLowerLeftCornerX=0|PrintAreaLowerLeftCornerY=0|PrintAreaUpperRightCornerX=0|PrintAreaUpperRightCornerY=0|Record=PcbPrintView|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
+Configuration3_Name3=OutputConfigurationParameter2
+Configuration3_Item3=IncludeBoardCutouts=False|IncludeBottomLayerComponents=False|IncludeMultiLayerComponents=True|IncludeTopLayerComponents=True|IncludeViewports=True|Index=0|Mirror=False|Name=Top LayerAssembly Drawing|PadNumberFontSize=14|Record=PcbPrintOut|ShowHoles=False|ShowPadNets=False|ShowPadNumbers=False|SubstituteFonts=False|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
+Configuration3_Name4=OutputConfigurationParameter3
+Configuration3_Item4=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Hidden|FFill=Hidden|FPad=Hidden|FRegion=Hidden|FText=Hidden|FTrack=Hidden|FVia=Hidden|Layer=TopLayer|Polygon=Hidden|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
+Configuration3_Name5=OutputConfigurationParameter4
+Configuration3_Item5=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=TopOverlay|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
+Configuration3_Name6=OutputConfigurationParameter5
+Configuration3_Item6=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Hidden|Layer=MultiLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
+Configuration3_Name7=OutputConfigurationParameter6
+Configuration3_Item7=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical1|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
+Configuration3_Name8=OutputConfigurationParameter7
+Configuration3_Item8=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical13|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
+Configuration3_Name9=OutputConfigurationParameter8
+Configuration3_Item9=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical15|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
+Configuration3_Name10=OutputConfigurationParameter9
+Configuration3_Item10=IncludeBoardCutouts=False|IncludeBottomLayerComponents=True|IncludeMultiLayerComponents=True|IncludeTopLayerComponents=False|IncludeViewports=True|Index=1|Mirror=False|Name=Bottom LayerAssembly Drawing|PadNumberFontSize=14|Record=PcbPrintOut|ShowHoles=False|ShowPadNets=False|ShowPadNumbers=False|SubstituteFonts=False|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
+Configuration3_Name11=OutputConfigurationParameter10
+Configuration3_Item11=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Hidden|FFill=Hidden|FPad=Hidden|FRegion=Hidden|FText=Hidden|FTrack=Hidden|FVia=Hidden|Layer=BottomLayer|Polygon=Hidden|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
+Configuration3_Name12=OutputConfigurationParameter11
+Configuration3_Item12=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=BottomOverlay|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
+Configuration3_Name13=OutputConfigurationParameter12
+Configuration3_Item13=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Hidden|Layer=MultiLayer|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
+Configuration3_Name14=OutputConfigurationParameter13
+Configuration3_Item14=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical1|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
+Configuration3_Name15=OutputConfigurationParameter14
+Configuration3_Item15=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical13|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
+Configuration3_Name16=OutputConfigurationParameter15
+Configuration3_Item16=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical15|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
 
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
 TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=NC Drill
-OutputName1=NC Drill Files
+OutputType1=CompositeDrill
+OutputName1=Composite Drill Drawing
 OutputDocumentPath1=
 OutputVariantName1=
 OutputDefault1=0
-Configuration1_Name1=ForceUpdateSettings
-Configuration1_Item1=False
-Configuration1_Name2=OutputConfigurationParameter1
-Configuration1_Item2=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|GenerateSeparateViaTypeFiles=False|NumberOfDecimals=5|NumberOfUnits=2|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Imperial|ZeroesMode=SuppressTrailingZeroes|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-OutputType2=Mask
-OutputName2=Solder/Paste Mask Prints
+PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType2=Drill
+OutputName2=Drill Drawing/Guides
 OutputDocumentPath2=
 OutputVariantName2=
 OutputDefault2=0
 PageOptions2=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType3=IPC2581
-OutputName3=IPC-2581 Files
+OutputType3=Board Stack Report
+OutputName3=Report Board Stack
 OutputDocumentPath3=
 OutputVariantName3=
 OutputDefault3=0
+PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 Configuration3_Name1=ForceUpdateSettings
 Configuration3_Item1=False
 Configuration3_Name2=OutputConfigurationParameter1
-Configuration3_Item2=Record=IPC2581View|IPC2581Version=B|MeasurementSystem=Metric|FloatingPointPrecision=6|IsWiseSupport=False|MergeNetTieNets=False|OEMDesignNumberRef=DesignItemID|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-OutputType4=Test Points
-OutputName4=Test Point Report
+Configuration3_Item2=Record=LayerStackReportView|Units=Imperial|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
+OutputType4=Final
+OutputName4=Final Artwork Prints
 OutputDocumentPath4=
-OutputVariantName4=
+OutputVariantName4=[No Variations]
 OutputDefault4=0
-Configuration4_Name1=ForceUpdateSettings
-Configuration4_Item1=False
-Configuration4_Name2=OutputConfigurationParameter1
-Configuration4_Item2=AdjacencyDistance=250000|GenerateCSVFormat=False|GenerateIPCFormat=True|GenerateSpreadSheetFormat=False|GenerateTextFormat=False|MergeNetTieNets=False|OriginPosition=Relative|OutlineLayer=56|OutputAdjancencies=False|OutputBoardOutline=False|OutputTraces=False|Record=TestPointView|ReportBottomLayerTestpoints=True|ReportTopLayerTestpoints=True|Units=Imperial|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-OutputType5=Plane
-OutputName5=Power-Plane Prints
+PageOptions4=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType5=Gerber X2
+OutputName5=Gerber X2 Files
 OutputDocumentPath5=
 OutputVariantName5=
 OutputDefault5=0
-PageOptions5=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 OutputType6=ODB
 OutputName6=ODB++ Files
 OutputDocumentPath6=
 OutputVariantName6=[No Variations]
 OutputDefault6=0
-OutputType7=Drill
-OutputName7=Drill Drawing/Guides
+OutputType7=Mask
+OutputName7=Solder/Paste Mask Prints
 OutputDocumentPath7=
 OutputVariantName7=
 OutputDefault7=0
 PageOptions7=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType8=CompositeDrill
-OutputName8=Composite Drill Drawing
+OutputType8=NC Drill
+OutputName8=NC Drill Files
 OutputDocumentPath8=
 OutputVariantName8=
 OutputDefault8=0
-PageOptions8=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType9=Board Stack Report
-OutputName9=Report Board Stack
+Configuration8_Name1=ForceUpdateSettings
+Configuration8_Item1=False
+Configuration8_Name2=OutputConfigurationParameter1
+Configuration8_Item2=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|NumberOfDecimals=5|NumberOfUnits=2|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Imperial|ZeroesMode=SuppressTrailingZeroes|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
+OutputType9=IPC2581
+OutputName9=IPC-2581 Files
 OutputDocumentPath9=
 OutputVariantName9=
 OutputDefault9=0
-PageOptions9=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 Configuration9_Name1=ForceUpdateSettings
 Configuration9_Item1=False
 Configuration9_Name2=OutputConfigurationParameter1
-Configuration9_Item2=Record=LayerStackReportView|Units=Imperial|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
-OutputType10=Gerber X2
-OutputName10=Gerber X2 Files
+Configuration9_Item2=Record=IPC2581View|IPC2581Version=B|MeasurementSystem=Metric|FloatingPointPrecision=6|IsWiseSupport=False|MergeNetTieNets=False|OEMDesignNumberRef=DesignItemID|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
+OutputType10=Plane
+OutputName10=Power-Plane Prints
 OutputDocumentPath10=
 OutputVariantName10=
 OutputDefault10=0
-OutputType11=Final
-OutputName11=Final Artwork Prints
+PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType11=Test Points
+OutputName11=Test Point Report
 OutputDocumentPath11=
-OutputVariantName11=[No Variations]
+OutputVariantName11=
 OutputDefault11=0
-PageOptions11=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+Configuration11_Name1=ForceUpdateSettings
+Configuration11_Item1=False
+Configuration11_Name2=OutputConfigurationParameter1
+Configuration11_Item2=AdjacencyDistance=250000|GenerateCSVFormat=False|GenerateIPCFormat=True|GenerateSpreadSheetFormat=False|GenerateTextFormat=False|MergeNetTieNets=False|OriginPosition=Relative|OutlineLayer=56|OutputAdjancencies=False|OutputBoardOutline=False|OutputTraces=False|Record=TestPointView|ReportBottomLayerTestpoints=True|ReportTopLayerTestpoints=True|Units=Imperial|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
 OutputType12=Gerber
 OutputName12=Gerber Files
 OutputDocumentPath12=
@@ -2583,7 +2671,7 @@ OutputDefault12=0
 Configuration12_Name1=ForceUpdateSettings
 Configuration12_Item1=False
 Configuration12_Name2=OutputConfigurationParameter1
-Configuration12_Item2=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16908289~1|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=100000000|FilmXSize=2000000000|FilmYSize=1600000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GenerateReports=True|GerberUnit=Imperial|GerberUnit=Imperial|IncludeUnconnectedMidLayerPads=True|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=50|MinusApertureTolerance=50|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=5|NumberOfDecimals=5|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16973830~1,16973832~1,16973834~1,16777217~1,16842751~1,16973835~1,16973833~1,16973831~1,16908289~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=True|PlotUsedDrillGuideLayerPairs=True|PlusApertureTolerance=50|PlusApertureTolerance=50|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False|DocumentPath=E:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal-V1.2.PcbDoc
+Configuration12_Item2=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16908289~1|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=100000000|FilmXSize=2000000000|FilmYSize=1600000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GenerateReports=True|GerberUnit=Imperial|GerberUnit=Imperial|IncludeUnconnectedMidLayerPads=True|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=50|MinusApertureTolerance=50|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=5|NumberOfDecimals=5|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16973830~1,16973832~1,16973834~1,16777217~1,16842753~1,16842754~1,16842751~1,16973835~1,16973833~1,16973831~1,16908289~1,16973837~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=True|PlotUsedDrillGuideLayerPairs=True|PlusApertureTolerance=50|PlusApertureTolerance=50|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False|DocumentPath=D:\JD-Signal\2.Hardware\JD-Signal-PRJ\JD-Signal.PcbDoc
 
 [OutputGroup6]
 Name=Report Outputs
