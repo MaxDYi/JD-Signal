@@ -1,5 +1,21 @@
 {
-    "ewp": "${workspaceFolder}\\EWARM\\JD-Signal.ewp",
-    "configuration": "JD-Signal",
-    "toolchain": "C:\\\\Program Files\\\\IAR Systems\\\\Embedded Workbench 9.1"
+  "ewp": "d:\\ArcheryCounter\\2.Firmware\\ArcheryCounter\\EWARM\\ArcheryCounter.ewp",
+  "configuration": "ArcheryCounter",
+  "toolchain": "C:\\\\Program Files\\\\IAR Systems\\\\Embedded Workbench 9.1",
+  "workspace": {
+    "path": "${workspaceFolder}\\EWARM\\Project.eww"
+  },
+  "workspaces": {
+    "${workspaceFolder}\\EWARM\\Project.eww": {
+      "configs": {
+        "${workspaceFolder}\\EWARM\\JD-Signal.ewp": "JD-Signal"
+      },
+      "selected": {
+        "path": "${workspaceFolder}\\EWARM\\JD-Signal.ewp"
+      }
+    }
+  },
+  "workbench": {
+    "path": "C:\\\\Program Files\\\\IAR Systems\\\\Embedded Workbench 9.1"
+  }
 }

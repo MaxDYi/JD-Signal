@@ -1,13 +1,13 @@
-"D:\JD-Signal\3.Firmware\JD-Signal\Drivers\LCD\LCD.c"
+"D:\JD-Signal\3.Firmware\JD-Signal\Drivers\LCD\lcd.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-D:\JD-Signal\3.Firmware\JD-Signal\EWARM\JD-Signal\BrowseInfo\Drivers\LCD\LCD.pbi.dep
+D:\JD-Signal\3.Firmware\JD-Signal\EWARM\JD-Signal\BrowseInfo\Drivers\LCD\lcd.pbi.dep
 -o
-D:\JD-Signal\3.Firmware\JD-Signal\EWARM\JD-Signal\BrowseInfo\Drivers\LCD\LCD.pbi
+D:\JD-Signal\3.Firmware\JD-Signal\EWARM\JD-Signal\BrowseInfo\Drivers\LCD\lcd.pbi
 -I
 D:\JD-Signal\3.Firmware\JD-Signal\Drivers\LCD
 -I

@@ -50,6 +50,7 @@ D:\JD-Signal\3.Firmware\JD-Signal\EWARM\JD-Signal\BrowseInfo\Application\User\FA
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2c_ex.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_qspi.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rtc.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rtc_ex.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sd.h \

@@ -7,11 +7,13 @@
 #include "dac.h"
 #include "dma.h"
 #include "fatfs.h"
+#include "quadspi.h"
 #include "rtc.h"
 #include "sdmmc.h"
 #include "spi.h"
 #include "tim.h"
 #include "usart.h"
+#include "usb_otg.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -24,6 +26,7 @@
 #include "BodeSetting.h"
 #include "cJSON.h"
 #include "LCD.h"
+#include "lcd_init.h"
 #include "LTC6912.h"
 #include "SaveInCSV.h"
 #include "SD.h"
@@ -92,13 +95,9 @@ int main(void)
     MX_GPIO_Init();
     MX_DMA_Init();
     MX_DAC1_Init();
-    MX_SDMMC2_SD_Init();
-    MX_SPI3_Init();
     MX_TIM3_Init();
     MX_TIM6_Init();
-    MX_UART8_Init();
     MX_USART1_UART_Init();
-    MX_USART6_UART_Init();
     MX_ADC3_Init();
     MX_RTC_Init();
     MX_FATFS_Init();
@@ -106,6 +105,12 @@ int main(void)
     MX_TIM4_Init();
     MX_ADC2_Init();
     MX_SPI4_Init();
+    MX_QUADSPI_Init();
+    MX_SDMMC1_SD_Init();
+    MX_SPI1_Init();
+    MX_UART4_Init();
+    MX_USART2_UART_Init();
+    MX_USB_OTG_FS_USB_Init();
     /* USER CODE BEGIN 2 */
     printf("\r\nJD-Signal\r\n");
 
@@ -120,17 +125,18 @@ int main(void)
     LED_Init();
     Relay_Init();
     HAL_Delay(100);
-    Relay_On(1);
+    Relay_On(4);
 
-    Sine_Init(2600, 50);
+    Vref_Init();
+    Sine_Init(1000, 50);
     Sine_OutputEn(1);
 
     LCD_Init();
     LCD_Fill(0, 0, LCD_W, LCD_H, BLACK);
-    LCD_ShowString(30, 30, "JD-Signal", WHITE, BLACK, 24, 0);
+    LCD_ShowString(2, 2, "JD-Signal", WHITE, BLACK, 16, 0);
 
-    LTC6912_SetGain(2, 1);
-    LTC6912_SetGain(2, 2);
+    // LTC6912_SetGain(2, 1);
+    // LTC6912_SetGain(2, 2);
     /* USER CODE END 2 */
 
     /* Call init function for freertos objects (in freertos.c) */
@@ -231,7 +237,7 @@ void PeriphCommonClock_Config(void)
 
     /** Initializes the peripherals clock
      */
-    PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_ADC | RCC_PERIPHCLK_SDMMC | RCC_PERIPHCLK_SPI3;
+    PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_USB | RCC_PERIPHCLK_ADC | RCC_PERIPHCLK_SDMMC | RCC_PERIPHCLK_SPI1;
     PeriphClkInitStruct.PLL2.PLL2M = 3;
     PeriphClkInitStruct.PLL2.PLL2N = 100;
     PeriphClkInitStruct.PLL2.PLL2P = 4;
@@ -243,13 +249,14 @@ void PeriphCommonClock_Config(void)
     PeriphClkInitStruct.PLL3.PLL3M = 2;
     PeriphClkInitStruct.PLL3.PLL3N = 100;
     PeriphClkInitStruct.PLL3.PLL3P = 2;
-    PeriphClkInitStruct.PLL3.PLL3Q = 2;
-    PeriphClkInitStruct.PLL3.PLL3R = 25;
+    PeriphClkInitStruct.PLL3.PLL3Q = 10;
+    PeriphClkInitStruct.PLL3.PLL3R = 10;
     PeriphClkInitStruct.PLL3.PLL3RGE = RCC_PLL3VCIRANGE_2;
     PeriphClkInitStruct.PLL3.PLL3VCOSEL = RCC_PLL3VCOWIDE;
     PeriphClkInitStruct.PLL3.PLL3FRACN = 0;
     PeriphClkInitStruct.SdmmcClockSelection = RCC_SDMMCCLKSOURCE_PLL2;
     PeriphClkInitStruct.Spi123ClockSelection = RCC_SPI123CLKSOURCE_PLL2;
+    PeriphClkInitStruct.UsbClockSelection = RCC_USBCLKSOURCE_PLL3;
     PeriphClkInitStruct.AdcClockSelection = RCC_ADCCLKSOURCE_PLL3;
     if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
     {

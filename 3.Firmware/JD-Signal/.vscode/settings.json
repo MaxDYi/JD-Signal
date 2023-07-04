@@ -7,5 +7,6 @@
         "userinteraction.h": "c",
         "sd.h": "c"
     },
-    "C_Cpp.default.configurationProvider": "iarsystems.iar-build"
+    "C_Cpp.default.configurationProvider": "iarsystems.iar-build",
+    "cmake.sourceDirectory": "D:/JD-Signal/3.Firmware/JD-Signal/Drivers/CMSIS/DSP/DSP_Lib_TestSuite"
 }

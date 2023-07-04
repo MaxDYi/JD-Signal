@@ -9,7 +9,7 @@
 
 #include "IPort3.h"
 
-#define IPORT_UART huart6
+#define IPORT_UART huart1
 
 #define IPORT_PASSWORD "88888"
 

@@ -42,7 +42,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-#define DEBUG_UART huart6
+#define DEBUG_UART huart4
 
 #pragma location = ".RAM_D1"
 uint16_t ADC1_Buffer[ADC_COUNT];
@@ -108,17 +108,17 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
 
 /* USER CODE END FunctionPrototypes */
 
-void Default_Task(void const *argument);
-void SysLED_Task(void const *argument);
-void SysTime_Task(void const *argument);
-void CJSON_Task(void const *argument);
-void Analyze_Task(void const *argument);
-void SysTemp_Task(void const *argument);
+void Default_Task(void const * argument);
+void SysLED_Task(void const * argument);
+void SysTime_Task(void const * argument);
+void CJSON_Task(void const * argument);
+void Analyze_Task(void const * argument);
+void SysTemp_Task(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
 /* GetIdleTaskMemory prototype (linked to static allocation support) */
-void vApplicationGetIdleTaskMemory(StaticTask_t **ppxIdleTaskTCBBuffer, StackType_t **ppxIdleTaskStackBuffer, uint32_t *pulIdleTaskStackSize);
+void vApplicationGetIdleTaskMemory( StaticTask_t **ppxIdleTaskTCBBuffer, StackType_t **ppxIdleTaskStackBuffer, uint32_t *pulIdleTaskStackSize );
 
 /* Hook prototypes */
 void configureTimerForRunTimeStats(void);
@@ -150,66 +150,66 @@ void vApplicationGetIdleTaskMemory(StaticTask_t **ppxIdleTaskTCBBuffer, StackTyp
 /* USER CODE END GET_IDLE_TASK_MEMORY */
 
 /**
- * @brief  FreeRTOS initialization
- * @param  None
- * @retval None
- */
-void MX_FREERTOS_Init(void)
-{
-    /* USER CODE BEGIN Init */
+  * @brief  FreeRTOS initialization
+  * @param  None
+  * @retval None
+  */
+void MX_FREERTOS_Init(void) {
+  /* USER CODE BEGIN Init */
     memset(Uart_Buffer, 0, UART_BUFFER_SIZE);
-    HAL_UARTEx_ReceiveToIdle_DMA(&huart6, Uart_Buffer, UART_BUFFER_SIZE);
+    HAL_UARTEx_ReceiveToIdle_DMA(&huart4, Uart_Buffer, UART_BUFFER_SIZE);
 
     cJSON_Hooks hooks;
     hooks.malloc_fn = pvPortMalloc;
     hooks.free_fn = vPortFree;
     cJSON_InitHooks(&hooks);
-    /* USER CODE END Init */
+  /* USER CODE END Init */
 
-    /* USER CODE BEGIN RTOS_MUTEX */
+  /* USER CODE BEGIN RTOS_MUTEX */
     /* add mutexes, ... */
-    /* USER CODE END RTOS_MUTEX */
+  /* USER CODE END RTOS_MUTEX */
 
-    /* USER CODE BEGIN RTOS_SEMAPHORES */
+  /* USER CODE BEGIN RTOS_SEMAPHORES */
     /* add semaphores, ... */
-    /* USER CODE END RTOS_SEMAPHORES */
+  /* USER CODE END RTOS_SEMAPHORES */
 
-    /* USER CODE BEGIN RTOS_TIMERS */
+  /* USER CODE BEGIN RTOS_TIMERS */
     /* start timers, add new ones, ... */
-    /* USER CODE END RTOS_TIMERS */
+  /* USER CODE END RTOS_TIMERS */
 
-    /* USER CODE BEGIN RTOS_QUEUES */
+  /* USER CODE BEGIN RTOS_QUEUES */
     /* add queues, ... */
-    /* USER CODE END RTOS_QUEUES */
+  /* USER CODE END RTOS_QUEUES */
 
-    /* Create the thread(s) */
-    /* definition and creation of default_Task */
-    osThreadDef(default_Task, Default_Task, osPriorityNormal, 0, 128);
-    default_TaskHandle = osThreadCreate(osThread(default_Task), NULL);
+  /* Create the thread(s) */
+  /* definition and creation of default_Task */
+  osThreadDef(default_Task, Default_Task, osPriorityNormal, 0, 128);
+  default_TaskHandle = osThreadCreate(osThread(default_Task), NULL);
 
-    /* definition and creation of sysLED_Task */
-    osThreadDef(sysLED_Task, SysLED_Task, osPriorityLow, 0, 128);
-    sysLED_TaskHandle = osThreadCreate(osThread(sysLED_Task), NULL);
+  /* definition and creation of sysLED_Task */
+  osThreadDef(sysLED_Task, SysLED_Task, osPriorityLow, 0, 128);
+  sysLED_TaskHandle = osThreadCreate(osThread(sysLED_Task), NULL);
 
-    /* definition and creation of sysTime_Task */
-    osThreadDef(sysTime_Task, SysTime_Task, osPriorityLow, 0, 128);
-    sysTime_TaskHandle = osThreadCreate(osThread(sysTime_Task), NULL);
+  /* definition and creation of sysTime_Task */
+  osThreadDef(sysTime_Task, SysTime_Task, osPriorityLow, 0, 128);
+  sysTime_TaskHandle = osThreadCreate(osThread(sysTime_Task), NULL);
 
-    /* definition and creation of cJSON_Task */
-    osThreadDef(cJSON_Task, CJSON_Task, osPriorityLow, 0, 1024);
-    cJSON_TaskHandle = osThreadCreate(osThread(cJSON_Task), NULL);
+  /* definition and creation of cJSON_Task */
+  osThreadDef(cJSON_Task, CJSON_Task, osPriorityLow, 0, 1024);
+  cJSON_TaskHandle = osThreadCreate(osThread(cJSON_Task), NULL);
 
-    /* definition and creation of analyze_Task */
-    osThreadDef(analyze_Task, Analyze_Task, osPriorityNormal, 0, 1024);
-    analyze_TaskHandle = osThreadCreate(osThread(analyze_Task), NULL);
+  /* definition and creation of analyze_Task */
+  osThreadDef(analyze_Task, Analyze_Task, osPriorityNormal, 0, 1024);
+  analyze_TaskHandle = osThreadCreate(osThread(analyze_Task), NULL);
 
-    /* definition and creation of sysTemp_Task */
-    osThreadDef(sysTemp_Task, SysTemp_Task, osPriorityIdle, 0, 128);
-    sysTemp_TaskHandle = osThreadCreate(osThread(sysTemp_Task), NULL);
+  /* definition and creation of sysTemp_Task */
+  osThreadDef(sysTemp_Task, SysTemp_Task, osPriorityIdle, 0, 128);
+  sysTemp_TaskHandle = osThreadCreate(osThread(sysTemp_Task), NULL);
 
-    /* USER CODE BEGIN RTOS_THREADS */
+  /* USER CODE BEGIN RTOS_THREADS */
     /* add threads, ... */
-    /* USER CODE END RTOS_THREADS */
+  /* USER CODE END RTOS_THREADS */
+
 }
 
 /* USER CODE BEGIN Header_Default_Task */
@@ -219,15 +219,15 @@ void MX_FREERTOS_Init(void)
  * @retval None
  */
 /* USER CODE END Header_Default_Task */
-void Default_Task(void const *argument)
+void Default_Task(void const * argument)
 {
-    /* USER CODE BEGIN Default_Task */
+  /* USER CODE BEGIN Default_Task */
     /* Infinite loop */
     for (;;)
     {
         osDelay(1000);
     }
-    /* USER CODE END Default_Task */
+  /* USER CODE END Default_Task */
 }
 
 /* USER CODE BEGIN Header_SysLED_Task */
@@ -237,16 +237,16 @@ void Default_Task(void const *argument)
  * @retval None
  */
 /* USER CODE END Header_SysLED_Task */
-void SysLED_Task(void const *argument)
+void SysLED_Task(void const * argument)
 {
-    /* USER CODE BEGIN SysLED_Task */
+  /* USER CODE BEGIN SysLED_Task */
     /* Infinite loop */
     for (;;)
     {
         HAL_GPIO_TogglePin(LED_BLUE_GPIO_Port, LED_BLUE_Pin);
         osDelay(500);
     }
-    /* USER CODE END SysLED_Task */
+  /* USER CODE END SysLED_Task */
 }
 
 /* USER CODE BEGIN Header_SysTime_Task */
@@ -256,9 +256,9 @@ void SysLED_Task(void const *argument)
  * @retval None
  */
 /* USER CODE END Header_SysTime_Task */
-void SysTime_Task(void const *argument)
+void SysTime_Task(void const * argument)
 {
-    /* USER CODE BEGIN SysTime_Task */
+  /* USER CODE BEGIN SysTime_Task */
     /* Infinite loop */
     for (;;)
     {
@@ -271,11 +271,11 @@ void SysTime_Task(void const *argument)
                 RTC_Date.Year + 1970, RTC_Date.Month, RTC_Date.Date,
                 RTC_Time.Hours, RTC_Time.Minutes, RTC_Time.Seconds);
         // printf("%s\r\n", TimeStamp);
-        LCD_ShowString(30, 60, (uint8_t const *)TimeStamp, WHITE, BLACK, 24, 0);
+        LCD_ShowString(2, 20, (uint8_t const *)TimeStamp, WHITE, BLACK, 16, 0);
         osDelay(1000);
     }
 
-    /* USER CODE END SysTime_Task */
+  /* USER CODE END SysTime_Task */
 }
 
 /* USER CODE BEGIN Header_CJSON_Task */
@@ -285,9 +285,9 @@ void SysTime_Task(void const *argument)
  * @retval None
  */
 /* USER CODE END Header_CJSON_Task */
-void CJSON_Task(void const *argument)
+void CJSON_Task(void const * argument)
 {
-    /* USER CODE BEGIN CJSON_Task */
+  /* USER CODE BEGIN CJSON_Task */
     BaseType_t xResult;
     uint32_t ulValue;
     /* Infinite loop */
@@ -342,7 +342,7 @@ void CJSON_Task(void const *argument)
         }
         HAL_UARTEx_ReceiveToIdle_DMA(&DEBUG_UART, Uart_Buffer, UART_BUFFER_SIZE);
     }
-    /* USER CODE END CJSON_Task */
+  /* USER CODE END CJSON_Task */
 }
 
 /* USER CODE BEGIN Header_Analyze_Task */
@@ -352,9 +352,9 @@ void CJSON_Task(void const *argument)
  * @retval None
  */
 /* USER CODE END Header_Analyze_Task */
-void Analyze_Task(void const *argument)
+void Analyze_Task(void const * argument)
 {
-    /* USER CODE BEGIN Analyze_Task */
+  /* USER CODE BEGIN Analyze_Task */
     BaseType_t xResult;
     uint32_t ulValue;
     /* Infinite loop */
@@ -373,7 +373,7 @@ void Analyze_Task(void const *argument)
             }
         }
     }
-    /* USER CODE END Analyze_Task */
+  /* USER CODE END Analyze_Task */
 }
 
 /* USER CODE BEGIN Header_SysTemp_Task */
@@ -383,15 +383,15 @@ void Analyze_Task(void const *argument)
  * @retval None
  */
 /* USER CODE END Header_SysTemp_Task */
-void SysTemp_Task(void const *argument)
+void SysTemp_Task(void const * argument)
 {
-    /* USER CODE BEGIN SysTemp_Task */
+  /* USER CODE BEGIN SysTemp_Task */
     /* Infinite loop */
     for (;;)
     {
         osDelay(1);
     }
-    /* USER CODE END SysTemp_Task */
+  /* USER CODE END SysTemp_Task */
 }
 
 /* Private application code --------------------------------------------------*/

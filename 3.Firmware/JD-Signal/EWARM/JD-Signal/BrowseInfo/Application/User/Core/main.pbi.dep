@@ -1,5 +1,5 @@
 D:\JD-Signal\3.Firmware\JD-Signal\EWARM\JD-Signal\BrowseInfo\Application\User\Core\main.pbi: \
-  C:\Users\MDYi\Desktop\JD-Signal-main\JD-Signal-main\3.Firmware\JD-Signal\Core\Src\main.c \
+  D:\JD-Signal\3.Firmware\JD-Signal\Core\Src\main.c \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Core\Inc\main.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Core\Inc\stm32h7xx_hal_conf.h \
@@ -45,6 +45,7 @@ D:\JD-Signal\3.Firmware\JD-Signal\EWARM\JD-Signal\BrowseInfo\Application\User\Co
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_i2c_ex.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_qspi.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rtc.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rtc_ex.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_sd.h \
@@ -91,10 +92,12 @@ D:\JD-Signal\3.Firmware\JD-Signal\EWARM\JD-Signal\BrowseInfo\Application\User\Co
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Middlewares\Third_Party\FatFs\src\ff.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\FATFS\Target\sd_diskio.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Core\Inc\rtc.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Core\Inc\quadspi.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Core\Inc\sdmmc.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Core\Inc\spi.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Core\Inc\tim.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Core\Inc\usart.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Core\Inc\usb_otg.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Core\Inc\gpio.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.1\arm\inc\c\stdio.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\CMSIS-DSP\Include\arm_math.h \
@@ -138,8 +141,7 @@ D:\JD-Signal\3.Firmware\JD-Signal\EWARM\JD-Signal\BrowseInfo\Application\User\Co
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\BodeSetting\BodeSetting.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\cJSON\cJSON.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\LCD\LCD.h \
-  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\LCD\ST7789.h \
-  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\LCD\fonts.h \
+  D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\LCD\lcd_init.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\LTC6912\LTC6912.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\SaveInCSV\SD.h \
   D:\JD-Signal\3.Firmware\JD-Signal\EWARM\..\Drivers\UserInteraction\UserInteraction.h

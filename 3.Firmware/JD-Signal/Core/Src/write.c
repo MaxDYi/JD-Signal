@@ -4,7 +4,7 @@
 #include "usart.h"
 #pragma module_name = "?__write"
 
-#define DEBUG_UART huart6
+#define DEBUG_UART huart4
 
 /*
  * If the __write implementation uses internal buffering, uncomment

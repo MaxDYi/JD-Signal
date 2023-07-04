@@ -1,60 +1,42 @@
-/*
- * @Description:
- * @Author: MaxDYi
- * @Date: 2023-01-13 08:31:03
- * @LastEditTime: 2023-01-14 14:58:52
- * @FilePath: \JD-Signal\Drivers\LCD\LCD.h
- */
-
-
 #ifndef __LCD_H__
 #define __LCD_H__
-
 #include "main.h"
-#include "ST7789.h"
-#include "fonts.h"
 
-void LCD_Fill(uint16_t xsta, uint16_t ysta, uint16_t xend, uint16_t yend, uint16_t color);//æŒ‡å®šåŒºåŸŸå¡«å……é¢œè‰²
-void LCD_DrawPoint(uint16_t x, uint16_t y, uint16_t color);//åœ¨æŒ‡å®šä½ç½®ç”»ä¸€ä¸ªç‚¹
-void LCD_DrawLine(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t color);//åœ¨æŒ‡å®šä½ç½®ç”»ä¸€æ¡çº¿
-void LCD_DrawRectangle(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t color);//åœ¨æŒ‡å®šä½ç½®ç”»ä¸€ä¸ªçŸ©å½¢
-void Draw_Circle(uint16_t x0, uint16_t y0, uint8_t r, uint16_t color);//åœ¨æŒ‡å®šä½ç½®ç”»ä¸€ä¸ªåœ†
+void LCD_Fill(uint16_t xsta, uint16_t ysta, uint16_t xend, uint16_t yend, uint16_t color);  // Ö¸¶¨ÇøÓòÌî³äÑÕÉ«
+void LCD_DrawPoint(uint16_t x, uint16_t y, uint16_t color);                                 // ÔÚÖ¸¶¨Î»ÖÃ»­Ò»¸öµã
+void LCD_DrawLine(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t color);      // ÔÚÖ¸¶¨Î»ÖÃ»­Ò»ÌõÏß
+void LCD_DrawRectangle(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t color); // ÔÚÖ¸¶¨Î»ÖÃ»­Ò»¸ö¾ØĞÎ
+void Draw_Circle(uint16_t x0, uint16_t y0, uint8_t r, uint16_t color);                      // ÔÚÖ¸¶¨Î»ÖÃ»­Ò»¸öÔ²
 
-void LCD_ShowChar(uint16_t x, uint16_t y, uint8_t num, uint16_t fc, uint16_t bc, uint8_t sizey, uint8_t mode);//æ˜¾ç¤ºä¸€ä¸ªå­—ç¬¦
-void LCD_ShowString(uint16_t x, uint16_t y, const uint8_t* p, uint16_t fc, uint16_t bc, uint8_t sizey, uint8_t mode);//æ˜¾ç¤ºå­—ç¬¦ä¸²
-uint32_t mypow(uint8_t m, uint8_t n);//æ±‚å¹‚
-void LCD_ShowIntNum(uint16_t x, uint16_t y, uint16_t num, uint8_t len, uint16_t fc, uint16_t bc, uint8_t sizey);//æ˜¾ç¤ºæ•´æ•°å˜é‡
-void LCD_ShowFloatNum1(uint16_t x, uint16_t y, float num, uint8_t len, uint16_t fc, uint16_t bc, uint8_t sizey);//æ˜¾ç¤ºä¸¤ä½å°æ•°å˜é‡
+void LCD_ShowChar(uint16_t x, uint16_t y, uint8_t num, uint16_t fc, uint16_t bc, uint8_t sizey, uint8_t mode);        // ÏÔÊ¾Ò»¸ö×Ö·û
+void LCD_ShowString(uint16_t x, uint16_t y, const uint8_t *p, uint16_t fc, uint16_t bc, uint8_t sizey, uint8_t mode); // ÏÔÊ¾×Ö·û´®
+uint16_t mypow(uint8_t m, uint8_t n);                                                                                 // ÇóÃİ
+void LCD_ShowIntNum(uint16_t x, uint16_t y, uint16_t num, uint8_t len, uint16_t fc, uint16_t bc, uint8_t sizey);      // ÏÔÊ¾ÕûÊı±äÁ¿
+void LCD_ShowFloatNum1(uint16_t x, uint16_t y, float num, uint8_t len, uint16_t fc, uint16_t bc, uint8_t sizey);      // ÏÔÊ¾Á½Î»Ğ¡Êı±äÁ¿
 
-void LCD_ShowPicture(uint16_t x, uint16_t y, uint16_t length, uint16_t width, const uint8_t pic[]);//æ˜¾ç¤ºå›¾ç‰‡
+void LCD_ShowPicture(uint16_t x, uint16_t y, uint16_t length, uint16_t width, const uint8_t pic[]); // ÏÔÊ¾Í¼Æ¬
 
-
-//ç”»ç¬”é¢œè‰²
-#define WHITE         	 0xFFFF
-#define BLACK         	 0x0000	  
-#define BLUE           	 0x001F  
-#define BRED             0XF81F
-#define GRED 			 0XFFE0
-#define GBLUE			 0X07FF
-#define RED           	 0xF800
-#define MAGENTA       	 0xF81F
-#define GREEN         	 0x07E0
-#define CYAN          	 0x7FFF
-#define YELLOW        	 0xFFE0
-#define BROWN 			 0XBC40 //æ£•è‰²
-#define BRRED 			 0XFC07 //æ£•çº¢è‰²
-#define GRAY  			 0X8430 //ç°è‰²
-#define DARKBLUE      	 0X01CF	//æ·±è“è‰²
-#define LIGHTBLUE      	 0X7D7C	//æµ…è“è‰²  
-#define GRAYBLUE       	 0X5458 //ç°è“è‰²
-#define LIGHTGREEN     	 0X841F //æµ…ç»¿è‰²
-#define LGRAY 			 0XC618 //æµ…ç°è‰²(PANNEL),çª—ä½“èƒŒæ™¯è‰²
-#define LGRAYBLUE        0XA651 //æµ…ç°è“è‰²(ä¸­é—´å±‚é¢œè‰²)
-#define LBBLUE           0X2B12 //æµ…æ£•è“è‰²(é€‰æ‹©æ¡ç›®çš„åè‰²)
+// »­±ÊÑÕÉ«
+#define WHITE 0xFFFF
+#define BLACK 0x0000
+#define BLUE 0x001F
+#define BRED 0XF81F
+#define GRED 0XFFE0
+#define GBLUE 0X07FF
+#define RED 0xF800
+#define MAGENTA 0xF81F
+#define GREEN 0x07E0
+#define CYAN 0x7FFF
+#define YELLOW 0xFFE0
+#define BROWN 0XBC40      // ×ØÉ«
+#define BRRED 0XFC07      // ×ØºìÉ«
+#define GRAY 0X8430       // »ÒÉ«
+#define DARKBLUE 0X01CF   // ÉîÀ¶É«
+#define LIGHTBLUE 0X7D7C  // Ç³À¶É«
+#define GRAYBLUE 0X5458   // »ÒÀ¶É«
+#define LIGHTGREEN 0X841F // Ç³ÂÌÉ«
+#define LGRAY 0XC618      // Ç³»ÒÉ«(PANNEL),´°Ìå±³¾°É«
+#define LGRAYBLUE 0XA651  // Ç³»ÒÀ¶É«(ÖĞ¼ä²ãÑÕÉ«)
+#define LBBLUE 0X2B12     // Ç³×ØÀ¶É«(Ñ¡ÔñÌõÄ¿µÄ·´É«)
 
 #endif
-
-
-
-
-

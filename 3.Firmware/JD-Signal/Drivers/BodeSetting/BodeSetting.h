@@ -16,13 +16,6 @@
 #include "tim.h"
 #include "dac.h"
 
- /**
-  * @description:
-  * @author: MaxDYi
-  * @param {double} freq
-  * @param {uint8_t} Amp
-  * @return {*}
-  */
 void Sine_Init(double freq, uint8_t Amp);
 
 void Sine_OutputEn(uint8_t flag);
@@ -30,5 +23,9 @@ void Sine_OutputEn(uint8_t flag);
 uint16_t Sine_GetData(uint8_t dataWidth, uint16_t dataLength, uint16_t dataCount, uint8_t Amp);
 
 void Sine_SetFreq(double freq);
+
+void Vref_Init(void);
+
+void Vref_Set(uint16_t data);
 
 #endif

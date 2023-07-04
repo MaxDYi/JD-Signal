@@ -47,19 +47,19 @@ void LTC6912_SetGain(uint16_t Gain, uint8_t IC_Num)
     {
     case 1:
     {
-        HAL_GPIO_WritePin(PGA1_CS_GPIO_Port, PGA1_CS_Pin, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(PGA_CS1_GPIO_Port, PGA_CS1_Pin, GPIO_PIN_SET);
         HAL_Delay(1);
-        HAL_GPIO_WritePin(PGA1_CS_GPIO_Port, PGA1_CS_Pin, GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(PGA_CS1_GPIO_Port, PGA_CS1_Pin, GPIO_PIN_RESET);
         LTC6912_SendOneByte(reg);
-        HAL_GPIO_WritePin(PGA1_CS_GPIO_Port, PGA1_CS_Pin, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(PGA_CS1_GPIO_Port, PGA_CS1_Pin, GPIO_PIN_SET);
     }
     case 2:
     {
-        HAL_GPIO_WritePin(PGA2_CS_GPIO_Port, PGA2_CS_Pin, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(PGA_CS2_GPIO_Port, PGA_CS2_Pin, GPIO_PIN_SET);
         HAL_Delay(1);
-        HAL_GPIO_WritePin(PGA2_CS_GPIO_Port, PGA2_CS_Pin, GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(PGA_CS2_GPIO_Port, PGA_CS2_Pin, GPIO_PIN_RESET);
         LTC6912_SendOneByte(reg);
-        HAL_GPIO_WritePin(PGA2_CS_GPIO_Port, PGA2_CS_Pin, GPIO_PIN_SET);
+        HAL_GPIO_WritePin(PGA_CS2_GPIO_Port, PGA_CS2_Pin, GPIO_PIN_SET);
     }
     default:
     {

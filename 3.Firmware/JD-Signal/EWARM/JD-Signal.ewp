@@ -1135,6 +1135,9 @@
           <name>$PROJ_DIR$\..\Core\Src\dma.c</name>
         </file>
         <file>
+          <name>$PROJ_DIR$\..\Core\Src\quadspi.c</name>
+        </file>
+        <file>
           <name>$PROJ_DIR$\..\Core\Src\rtc.c</name>
         </file>
         <file>
@@ -1148,6 +1151,9 @@
         </file>
         <file>
           <name>$PROJ_DIR$\..\Core\Src\usart.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\Core\Src\usb_otg.c</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\Core\Src\stm32h7xx_it.c</name>
@@ -1235,10 +1241,10 @@
     <group>
       <name>LCD</name>
       <file>
-        <name>$PROJ_DIR$\..\Drivers\LCD\LCD.c</name>
+        <name>$PROJ_DIR$\..\Drivers\LCD\lcd.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\Drivers\LCD\ST7789.c</name>
+        <name>$PROJ_DIR$\..\Drivers\LCD\lcd_init.c</name>
       </file>
     </group>
     <group>
@@ -1317,6 +1323,9 @@
       </file>
       <file>
         <name>$PROJ_DIR$\..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dac_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_qspi.c</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rtc.c</name>
